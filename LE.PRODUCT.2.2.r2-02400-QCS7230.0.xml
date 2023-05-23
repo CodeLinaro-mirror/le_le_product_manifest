@@ -8,6 +8,7 @@
   <remote fetch="https://git.codelinaro.org/clo/le" name="clo-le"/>
   <default remote="clo-la" revision="dummy_revision" sync-c="true" sync-tags="false"/>
   <project remote="clo-le" name="aosphal-adaptation" path="src/aosphal-adaptation" revision="fd5edaed6a71e1d965cb8625b9f54b8940b72de3" upstream="refs/heads/aosphal-le-adaptation.lnx.1.1.r2-rel"/>
+  <project remote="clo-le" name="meta-qti-camera" path="poky/meta-qti-camera" revision="c78bc18234ae2fe89b9b5fbe20af28bab4d9d172" upstream="refs/heads/camera.lnx.iot.meta.4.0.r2-rel"/>
   <project remote="clo-le" name="display/libgbm" path="src/display/libgbm" revision="a5762ddfe4214a999b23697e017d23e0a35483de" upstream="refs/heads/display.lnx.6.8.r2-rel"/>
   <project remote="clo-le" name="fs/external/mtd-utils" path="src/filesystems/mtd-utils" revision="8d816d3e16562841cbfc5b82befc5914febb81f3" upstream="refs/heads/core-technologies.lnx.13.0.r13-rel"/>
   <project remote="clo-le" name="meta-qti-aosphal-adaptation" path="poky/meta-qti-aosphal-adaptation" revision="143851b7e76b17633f6b4019ebc7c6743398129f" upstream="refs/heads/aosphal-le-adaptation.lnx.1.1.r2-rel"/>
