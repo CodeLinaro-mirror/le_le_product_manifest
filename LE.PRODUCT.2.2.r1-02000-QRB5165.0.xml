@@ -39,8 +39,6 @@
   </project>
   <project remote="clo-le" name="platform/hardware/qcom/wlan" path="src/hardware/qcom/wlan" revision="8185c747477caf4f08d150c316b45f61348c3710" upstream="refs/heads/wlan-aosp.lnx.7.0.r36-rel"/>
   <project remote="clo-le" name="platform/qcom-opensource/bt" path="src/qcom-opensource/bt" revision="be7cc48a9720337282fdaca15305ae341efd7d7c" upstream="refs/heads/bt.lnx.le.2.0.r2-rel"/>
-  <project remote="clo-le" name="platform/system/memory_repo" path="src/system/memory" revision="ee1163c598ba2a1a0c0f53b97b3e063665695817" upstream="refs/heads/memory-le-apps.lnx.1.0.r22-rel"/>
-  <project remote="clo-le" name="platform/system/memory/libdmabufheap" path="src/system/memory/libdmabufheap" revision="a58f74eee9f971189ab7e4b3c94fc916c63670e7" upstream="refs/heads/memory-le-apps.lnx.1.0.r22-rel"/>
   <project remote="clo-le" name="platform/vendor/opensource/audio-kernel" path="src/vendor/qcom/opensource/audio-kernel/legacy" revision="4f7b3dba58b92a83b5ca7e9eb57d2189d633abbd" upstream="refs/heads/audio-kernel.lnx.5.15.r29-rel"/>
   <project remote="clo-le" name="platform/vendor/opensource/camera-kernel" path="src/vendor/qcom/opensource/camera-kernel" revision="2fc5c8a98a1d16963a7f590baa1b6348bc46c5da" upstream="refs/heads/camera-kernel-iot.lnx.2.1.r1-rel"/>
   <project remote="clo-la" name="platform/vendor/opensource/cvp-kernel" path="src/vendor/qcom/opensource/cvp-kernel" revision="201e73f69d621035302a36dd6de5db83e400e928" upstream="refs/heads/cvp-kernel.lnx.1.2.r2-rel"/>
