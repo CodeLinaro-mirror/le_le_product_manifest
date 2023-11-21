@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <refs>
+    <image name="LKP.QCLINUX.1.0.R1" project="kernelplatform/manifest" server="https://git.codelinaro.org/clo/la" tag="AU_LINUX_LKP.QCLINUX.1.0.R1.00.00.00.204.005" targets="dummy"/>
+  </refs>
+  <remote fetch="https://git.codelinaro.org/clo/le" name="clo-le"/>
+  <remote fetch="https://git.codelinaro.org/clo/ype" name="clo-ype"/>
+  <default remote="clo-le" revision="dummy_revision" sync-c="true" sync-tags="false"/>
+  <project remote="clo-ype" name="external/openembedded.org/meta-openembedded" path="layers/meta-openembedded" revision="529620141e773080a6a7be4615fb7993204af883" upstream="refs/heads/clo/openembeded.org/kirkstone"/>
+  <project remote="clo-ype" name="external/yoctoproject.org/meta-security" path="layers/meta-security" revision="06c240c3c235fa06fe724e278d53463ac67cc26b" upstream="refs/heads/clo/yoctoproject.com/kirkstone"/>
+  <project remote="clo-ype" name="external/yoctoproject.org/meta-selinux" path="layers/meta-selinux" revision="a401f4b2816a0b41ce8d9351542658c721935bcd" upstream="refs/heads/clo/yocto/kirkstone"/>
+  <project remote="clo-ype" name="external/yoctoproject.org/meta-virtualization" path="layers/meta-virtualization" revision="e60f59f3567b78286ea34337dbae468a5f18f1c6" upstream="refs/heads/clo/yocto/kirkstone"/>
+  <project remote="clo-ype" name="external/yoctoproject.org/poky" path="layers/poky" revision="d6b8790370500b99ca11f0d8a05c39b661ab2ba6" upstream="refs/heads/clo/yocto/kirkstone"/>
+  <project remote="clo-le" name="le-utils" path="sources/le-utils" revision="bf7a1a626db3e17c6973513ba48ab2c134e4d701" upstream="refs/heads/le-utils.qclinux.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/system/memory/libdmabufheap" path="sources/system/memory/libdmabufheap" revision="ab7c9981f56100691194a63fb6e4129ba7b9917c" upstream="refs/heads/memory-le-apps.lnx.1.0.r32-rel"/>
+</manifest>
