@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <refs>
+    <image bins_path="src/kernel-6.1/kernel_platform" name="KERNEL.PLATFORM.3.2" project="kernelplatform/manifest" server="git://git-android.quicinc.com" src_path="src/kernel-6.1" tag="AU_LINUX_KERNEL.PLATFORM.3.2.00.00.00.059.016" targets="mdm9607"/>
+    <image bins_path="." name="LE.FRAMEWORK.2.0" project="le/framework/manifest" server="git://git-android.quicinc.com" src_path="." tag="AU_LINUX_EMBEDDED_LE.FRAMEWORK.2.0_TARGET_ALL.01.317.242" targets="mbbmdm9607"/>
+  </refs>
+  <remote fetch="https://git.codelinaro.org" name="clo" review="codelinaro.org"/>
+  <default remote="clo" revision="refs/heads/LE.PRODUCT.6.0"/>
+  <project dest-branch="refs/heads/core-technologies.lnx.14.0" name="clo/le/fs/external/mtd-utils" path="src/filesystems/mtd-utils" revision="19e2c220a3308d1ccc73f87d9ff7099e4b6278d7" upstream="refs/heads/core-technologies.lnx.14.0"/>
+  <project dest-branch="refs/heads/lk.lnx.1.0" name="clo/la/kernel/lk" path="src/bootable/bootloader/lk" revision="47604339566cdc065ee777814ccb6ad9b99989a6" upstream="refs/heads/lk.lnx.1.0"/>
+  <project dest-branch="refs/heads/mdm-ss-mgr.lnx.1.1.c7" name="clo/le/mdm/reboot-daemon" path="src/mdm-ss-mgr/reboot-daemon" revision="786f011058c6ce1186e03e7b38b4701b0e1de5a2" upstream="refs/heads/mdm-ss-mgr.lnx.1.1.c7"/>
+  <project dest-branch="refs/heads/core-technologies.lnx.14.0" name="clo/le/meta-qti-core" path="poky/meta-qti-core" revision="f9ecee0d95befef2486cc9f7260b29889f9ff422" upstream="refs/heads/core-technologies.lnx.14.0"/>
+  <project dest-branch="refs/heads/data.lnx.1.0.c51" name="clo/le/meta-qti-data" path="disregard/poky/meta-qti-data" revision="3a738ecb4c2d91ea2e8f231ff173cff61b193b67" upstream="refs/heads/data.lnx.1.0.c51"/>
+  <project dest-branch="refs/heads/location.lnx.4.0.c71" name="clo/le/meta-qti-location" path="poky/meta-qti-location" revision="103a8518eca0b6623fcdfcd17c9d7539aa4be8e0" upstream="refs/heads/location.lnx.4.0.c71"/>
+  <project dest-branch="refs/heads/sec-userspace.lnx.14.0" name="clo/le/meta-qti-security" path="poky/meta-qti-security" revision="7b51af8b90321b0f3835eafa706f4e321f9ce80d" upstream="refs/heads/sec-userspace.lnx.14.0"/>
+  <project dest-branch="refs/heads/mdm-ss-mgr.lnx.1.1.c7" name="clo/le/meta-qti-ss-mgr" path="poky/meta-qti-ss-mgr" revision="2af2083c459f755add711e3a1415c5adf1b0a595" upstream="refs/heads/mdm-ss-mgr.lnx.1.1.c7"/>
+  <project dest-branch="refs/heads/wlan-service.lnx.1.4" name="clo/le/meta-qti-wlan" path="disregard/poky/meta-qti-wlan" revision="ceb1bbffc5a46734b35312056887673de72dc7a6" upstream="refs/heads/wlan-service.lnx.1.4"/>
+  <project name="clo/la/platform/external/bluetooth/bluez" path="external/bluetooth/bluez" revision="bt.le.1.0.c3-rel"/>
+  <project dest-branch="refs/heads/data.lnx.1.0.c51" name="clo/la/platform/external/compat-wireless" path="src/external/compat-wireless" revision="3ae8b5bc6594658ef21092b948a36dd408a76bd5" upstream="refs/heads/data.lnx.1.0.c51"/>
+  <project dest-branch="refs/heads/wlan-service.lnx.1.4" name="clo/la/platform/external/wpa_supplicant_8" path="src/external/wpa_supplicant_8" revision="715b69a0499575c36668e2eed90672f654cde620" upstream="refs/heads/wlan-service.lnx.1.4"/>
+  <project groups="qcom,default" name="clo/la/platform/hardware/qcom/audio" path="hardware/qcom/audio" revision="audio-userspace.lnx.2.2.c4-rel"/>
+  <project dest-branch="refs/heads/bt-fluoride.le.1.2" name="clo/la/platform/hardware/qcom/bt" path="hardware/qcom/bt" revision="41f9392e879352c89b8572aa8e4cd8a79fc6a5f1" upstream="refs/heads/bt-fluoride.le.1.2"/>
+  <project groups="qcom,default" name="clo/la/platform/hardware/qcom/display" path="display/display-hal" revision="display.lnx.3.0.c9-rel"/>
+  <project dest-branch="refs/heads/location.lnx.4.0.c71" name="clo/la/platform/hardware/qcom/gps" path="src/hardware/qcom/gps" revision="47e73a2d6d61be21e4ed89876a47e3ec9399f48b" upstream="refs/heads/location.lnx.4.0.c71"/>
+  <project dest-branch="refs/heads/mdm-ss-mgr.lnx.1.1.c7" name="clo/le/platform/init_mss" path="src/mdm-ss-mgr/init_mss" revision="e1db20af1ebf5d99429161e3ad213d75acfb696c" upstream="refs/heads/mdm-ss-mgr.lnx.1.1.c7"/>
+  <project name="clo/la/platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" revision="android-framework.lnx.2.0.c7-rel"/>
+  <project name="clo/la/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="android-framework.lnx.2.0.c7-rel"/>
+  <project dest-branch="refs/heads/bt-fluoride.le.1.2" name="clo/le/platform/qcom-opensource/bt" path="qcom-opensource/bt" revision="5e5a3091406c8d85cd456875cfdeba9567dd38a8" upstream="refs/heads/bt-fluoride.le.1.2"/>
+  <project dest-branch="refs/heads/bt-fluoride.le.1.2" name="clo/la/platform/system/bt" path="system/bt" revision="0d4f613cfca871990835f6f6530e3309748390c6" upstream="refs/heads/bt-fluoride.le.1.2"/>
+  <project dest-branch="refs/heads/audio-drivers.lnx.3.0.c6" name="clo/la/platform/vendor/opensource/audio-kernel" path="vendor/qcom/opensource/audio-kernel" revision="b1922a9105fe6b8665b045d8a3abee1c27fb44fd" upstream="refs/heads/audio-drivers.lnx.3.0.c6"/>
+  <project dest-branch="refs/heads/bt-fluoride.le.1.2" name="clo/la/platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/bluetooth" revision="709a83f6f153a16312043b4a8a0dc1c71f6506f2" upstream="refs/heads/bt-fluoride.le.1.2"/>
+  <project dest-branch="refs/heads/data.lnx.1.0.c51" name="clo/la/platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="src/data-ipa-cfg-mgr" revision="e06a05b82dfb4193d20da8c3f34b6f2679c53b57" upstream="refs/heads/data.lnx.1.0.c51"/>
+  <project dest-branch="refs/heads/data.lnx.1.0.c51" name="clo/la/platform/vendor/qcom-opensource/dataservices" path="src/data-oss" revision="0e5131ffe61c3d134b75993c2845d84a62d9e8c9" upstream="refs/heads/data.lnx.1.0.c51"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/kernel-tests/mm-audio" path="qcom-opensource/mm-audio" revision="audio-mdm.lnx.1.0.c1-rel"/>
+  <project dest-branch="refs/heads/location.lnx.4.0.c71" name="clo/la/platform/vendor/qcom-opensource/location" path="src/qcom-opensource/location" revision="45a3bdc12b94747a686f6894cc0666225bca28cb" upstream="refs/heads/location.lnx.4.0.c71"/>
+  <project dest-branch="refs/heads/data.lnx.1.0.c51" name="clo/le/platform/vendor/qcom-opensource/shortcut-fe" path="src/shortcut-fe" revision="f2076916e9428f76e0a44e1966705cb44ef1b4b7" upstream="refs/heads/data.lnx.1.0.c51"/>
+  <project dest-branch="refs/heads/wlan-api.lnx.1.6" name="clo/la/platform/vendor/qcom-opensource/wlan/fw-api" path="src/wlan/fw-api" revision="0e65439680bf68d12603c531d746157c4ec0697c" upstream="refs/heads/wlan-api.lnx.1.6"/>
+  <project dest-branch="refs/heads/wlan-cmn.driver.lnx.2.5" name="clo/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="src/wlan/qca-wifi-host-cmn" revision="de71f4656fa0977cb3007a01b7be07a2f9943f58" upstream="refs/heads/wlan-cmn.driver.lnx.2.5"/>
+  <project dest-branch="refs/heads/wlan-cld3.driver.lnx.2.5" name="clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="src/wlan/qcacld-3.0" revision="ea0134e18fd32a5ed57b7dd7979705993c2c575b" upstream="refs/heads/wlan-cld3.driver.lnx.2.5"/>
+  <project dest-branch="refs/heads/wlan-service.lnx.1.4" name="clo/la/platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="src/wlan/utils/sigma-dut" revision="2467cb5e2eba8a138ce98afa78cf110fd0f811e3" upstream="refs/heads/wlan-service.lnx.1.4"/>
+  <project dest-branch="refs/heads/sec-kernel.lnx.14.0" name="clo/la/platform/vendor/qcom/opensource/securemsm-kernel" path="src/vendor/qcom/opensource/securemsm-kernel" revision="77752c91fdf564a740b95ec1dc5bc6c37c5c08e2" upstream="refs/heads/sec-kernel.lnx.14.0"/>
+  <project dest-branch="refs/heads/wlan-service.lnx.1.4" name="clo/la/platform/vendor/qcom/wlan" path="src/device/qcom/wlan" revision="026467697858f0c4a17ad16b9d713c4c05b8b451" upstream="refs/heads/wlan-service.lnx.1.4"/>
+  <project dest-branch="refs/heads/wlan-tools.lnx.1.1" name="clo/le/qcom-opensource/mdm-init" path="src/mdm-init" revision="b01826e341422bcedb74b4ced612946992359b62" upstream="refs/heads/wlan-tools.lnx.1.1"/>
+  <project name="clo/le/wayland/weston" path="display/weston" revision="display.lnx.3.0.c9-rel"/>
+</manifest>
