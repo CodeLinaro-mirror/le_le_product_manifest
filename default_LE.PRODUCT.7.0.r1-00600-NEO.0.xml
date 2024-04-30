@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <refs>
+    <image bins_path="src/kernel-5.10" name="KERNEL.PLATFORM.1.0.r4" project="kernelplatform/manifest" server="git://git-android.quicinc.com" src_path="src/kernel-5.10" tag="AU_LINUX_KERNEL.PLATFORM.1.0.R4.00.00.00.068.006" targets="neo_le"/>
+    <image bins_path="." name="LE.FRAMEWORK.2.0.r8" project="le/framework/manifest" server="git://git-android.quicinc.com" src_path="." tag="AU_LINUX_EMBEDDED_LE.FRAMEWORK.2.0.R8_TARGET_ALL.01.05.005" targets="sxrneo"/>
+    <image bins_path="." name="VIDEO.LE.1.0.r2" project="techpack/video/manifest" server="git://git-android.quicinc.com" src_path="." tag="AU_LINUX_EMBEDDED_VIDEO.LE.1.0.R2_TARGET_ALL.00.000.056" targets="video"/>
+    <image bins_path="." name="CAMERA.LE.2.2.r2" project="techpack/camera/manifest" server="git://git-android.quicinc.com" src_path="." tag="AU_LINUX_EMBEDDED_CAMERA.LE.2.2.R2_TARGET_ALL.00.000.005" targets="camera"/>
+    <image bins_path="." name="DISPLAY.LE.1.0.r2" project="techpack/display/manifest" server="git://git-android.quicinc.com" src_path="." tag="AU_LINUX_EMBEDDED_DISPLAY.LE.1.0.R2_TARGET_ALL.00.000.067" targets="display"/>
+  </refs>
+  <remote fetch="https://git.codelinaro.org" name="clo" review="codelinaro.org"/>
+  <default remote="clo" revision="refs/heads/LE.PRODUCT.7.0.r1"/>
+  <project name="clo/le/abl/tianocore/edk2" path="src/bootable/bootloader/edk2" revision="refs/heads/uefi.lnx.3.0.r13-rel"/>
+  <project name="clo/le/aosphal-adaptation" path="src/aosphal-adaptation" revision="refs/heads/aosphal-le-adaptation.lnx.2.0.r3-rel"/>
+  <project name="clo/le/fs/external/mtd-utils" path="src/filesystems/mtd-utils" revision="refs/heads/core-technologies.lnx.12.0.r11-rel"/>
+  <project name="clo/le/mdm/reboot-daemon" path="src/mdm-ss-mgr/reboot-daemon" revision="refs/heads/mdm-ss-mgr.lnx.2.0.r9-rel"/>
+  <project name="clo/le/meta-qti-agm" path="poky/meta-qti-agm" revision="refs/heads/audio-platform-arintf.lnx.1.1.r3-rel"/>
+  <project name="clo/le/meta-qti-aosphal-adaptation" path="poky/meta-qti-aosphal-adaptation" revision="refs/heads/aosphal-le-adaptation.lnx.2.0.r3-rel"/>
+  <project name="clo/le/meta-qti-arpal" path="poky/meta-qti-arpal" revision="refs/heads/audio-platform-arintf.lnx.1.1.r3-rel"/>
+  <project name="clo/le/meta-qti-bt" path="poky/meta-qti-bt" revision="refs/heads/bt.lnx.le.3.0.r6-rel"/>
+  <project name="clo/le/meta-qti-core" path="poky/meta-qti-core" revision="refs/heads/core-technologies.lnx.12.0.r11-rel"/>
+  <project groups="fastcv" name="clo/le/meta-qti-cv" path="poky/meta-qti-cv" revision="refs/heads/computervision-fastcv_xr.lnx.1.0.r3-rel"/>
+  <project name="clo/le/meta-qti-eva" path="poky/meta-qti-eva" revision="refs/heads/eva-kernel_xr.lnx.1.0.r3-rel"/>
+  <project name="clo/le/meta-qti-security" path="poky/meta-qti-security" revision="refs/heads/sec-userspace.lnx.12.0.r41-rel"/>
+  <project name="clo/le/meta-qti-ss-mgr" path="poky/meta-qti-ss-mgr" revision="refs/heads/mdm-ss-mgr.lnx.2.0.r9-rel"/>
+  <project name="clo/le/meta-qti-wlan" path="poky/meta-qti-wlan" revision="refs/heads/wlan-service-mdm.lnx.2.0.r5-rel"/>
+  <project name="clo/le/platform/external/wpa_supplicant_8" path="src/external/wpa_supplicant_8" revision="refs/heads/wlan-ks-service.lnx.5.0.r6-rel"/>
+  <project name="clo/le/platform/hardware/qcom/bt" path="src/hardware/qcom/bt" revision="refs/heads/bt.lnx.le.3.0.r6-rel"/>
+  <project name="clo/le/platform/hardware/qcom/wlan" path="src/hardware/qcom/wlan" revision="refs/heads/wlan-aosp.lnx.7.0.r52-rel"/>
+  <project name="clo/le/platform/init_mss" path="src/mdm-ss-mgr/init_mss" revision="refs/heads/mdm-ss-mgr.lnx.2.0.r9-rel"/>
+  <project name="clo/le/platform/qcom-opensource/bt" path="src/qcom-opensource/bt" revision="refs/heads/bt.lnx.le.3.0.r6-rel"/>
+  <project name="clo/le/platform/vendor/opensource/eva-kernel" path="src/vendor/qcom/opensource/eva-kernel" revision="refs/heads/eva-kernel_xr.lnx.1.0.r3-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/bluetooth" path="src/vendor/qcom/opensource/bluetooth" revision="refs/heads/bt.lnx.le.3.0.r6-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/bluetooth_ext" path="src/vendor/qcom/opensource/bluetooth_ext" revision="refs/heads/bt.lnx.le.3.0.r6-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/dsmf" path="src/dsmf" revision="refs/heads/dsmf.lnx.1.0.r2-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/system/bt" path="src/vendor/qcom/opensource/system/bt" revision="refs/heads/bt.lnx.le.3.0.r6-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/tools" path="src/vendor/qcom/opensource/tools" revision="refs/heads/opensource-tools.lnx.1.0.r260-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/wlan/fw-api" path="src/wlan/fw-api" revision="refs/heads/wlan-api.lnx.1.0.r237-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="src/wlan/qca-wifi-host-cmn" revision="refs/heads/wlan-cmn.driver.lnx.2.2.r2-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="src/wlan/qcacld-3.0" revision="refs/heads/wlan-cld3.driver.lnx.2.2.r2-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="src/wlan/utils/sigma-dut" revision="refs/heads/wlan-service-mcc.lnx.1.0.r56-rel"/>
+  <project name="clo/le/platform/vendor/qcom/opensource/agm" path="src/vendor/qcom/opensource/agm" revision="refs/heads/audio-platform-arintf.lnx.1.1.r3-rel"/>
+  <project name="clo/le/platform/vendor/qcom/opensource/arpal-lx" path="src/vendor/qcom/opensource/pal" revision="refs/heads/audio-platform-arintf.lnx.1.1.r3-rel"/>
+  <project name="clo/le/platform/vendor/qcom/opensource/audio-kernel-ar" path="src/vendor/qcom/opensource/audio-kernel" revision="refs/heads/audio-kernel-aurora.lnx.5.10.r3-rel"/>
+  <project name="clo/le/platform/vendor/qcom/opensource/tinyalsa" path="src/vendor/qcom/opensource/tinyalsa" revision="refs/heads/audio-tinylibs.lnx.1.0.r67-rel"/>
+  <project name="clo/le/platform/vendor/qcom/opensource/tinycompress" path="src/vendor/qcom/opensource/tinycompress" revision="refs/heads/audio-tinylibs.lnx.1.0.r67-rel"/>
+  <project name="clo/le/platform/vendor/qcom/wlan" path="src/device/qcom/wlan" revision="refs/heads/wlan-service-mcc.lnx.1.0.r56-rel"/>
+  <project name="clo/le/pulseaudio" path="src/external/pulseaudio" revision="refs/heads/pulseaudio.lnx.2.0.r9-rel"/>
+  <project name="clo/le/qc/components/audio-kernel-aurora.lnx/oe-recipes-oss" path="poky/meta-qti-bsp/recipes-audio/audio-kernel" revision="refs/heads/audio-kernel-aurora.lnx.5.10.r3-rel"/>
+  <project name="clo/le/qc/components/audio-tinylibs.lnx/oe-recipes-oss" path="poky/meta-qti-bsp/recipes-audio/tinylibs" revision="refs/heads/audio-tinylibs.lnx.1.0.r67-rel"/>
+  <project name="clo/le/qc/components/pulseaudio.lnx/oe-recipes-oss" path="poky/meta-qti-bsp/recipes-pulseaudio/pulseaudio_13.0" revision="refs/heads/pulseaudio.lnx.2.0.r9-rel"/>
+  <project name="clo/le/qcom-opensource/mdm-init" path="src/mdm-init" revision="refs/heads/wlan-service-mdm.lnx.2.0.r5-rel"/>
+</manifest>
