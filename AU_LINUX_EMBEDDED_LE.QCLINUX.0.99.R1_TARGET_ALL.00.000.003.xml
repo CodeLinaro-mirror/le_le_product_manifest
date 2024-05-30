@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://git.codelinaro.org/clo/le" name="clo-le"/>
+  <remote fetch="https://git.codelinaro.org/clo/ype" name="clo-ype"/>
+  <remote fetch="https://github.com/quic-yocto-stg" name="quic-yocto-stg"/>
+  <default remote="clo-le" revision="dummy_revision" sync-c="true" sync-tags="false"/>
+  <project remote="quic-yocto-stg" name="platform_vendor_opensource_eva-kernel" path="sources/cv/cv-kernel/eva-kernel" revision="76b98e39bd730d22027e1641d8a01471de280669" upstream="refs/heads/eva-kernel.qclinux.1.0.r3-rel"/>
+  <project remote="quic-yocto-stg" name="le-utils" path="sources/le-utils" revision="989cee526729c3a622a3c2726f45e86636636fa1" upstream="refs/heads/le-utils.qclinux.1.0.r4-rel"/>
+  <project remote="clo-le" name="platform/vendor/opensource/synx-kernel" path="sources/synx-kernel" revision="3d32d46edf68f058e3fa045dac8ed6f5b23066aa" upstream="refs/heads/synx-kernel.lnx.1.2.r3-rel"/>
+</manifest>
