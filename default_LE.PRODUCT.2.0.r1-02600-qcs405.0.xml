@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <refs>
+    <image bins_path="src/kernel-5.15" name="KERNEL.PLATFORM.2.0.r13" project="kernelplatform/manifest" server="git://git-android.quicinc.com" src_path="src/kernel-5.15" tag="AU_LINUX_KERNEL.PLATFORM.2.0.R13.00.00.00.022.014" targets="qcs405"/>
+    <image bins_path="." name="LE.FRAMEWORK.2.0.r4" project="le/framework/manifest" server="git://git-android.quicinc.com" src_path="." tag="AU_LINUX_EMBEDDED_LE.FRAMEWORK.2.0.R4_TARGET_ALL.01.318.028" targets="alp"/>
+  </refs>
+  <remote fetch="https://git.codelinaro.org" name="clo" review="codelinaro.org"/>
+  <default remote="clo" revision="refs/heads/LE.PRODUCT.2.0.r1"/>
+  <project name="clo/le/aosphal-adaptation" path="src/aosphal-adaptation" revision="refs/heads/aosphal-le-adaptation.lnx.1.1.r3-rel"/>
+  <project name="clo/le/fs/external/mtd-utils" path="src/filesystems/mtd-utils" revision="refs/heads/core-technologies.lnx.3.0.r135-rel"/>
+  <project name="clo/le/gstreamer-1.14.4/gst-examples" path="src/external/gstreamer-1.14.4/gst-examples" revision="refs/heads/gstreamer.lnx.1.0.r4-rel"/>
+  <project name="clo/le/gstreamer-1.14.4/gst-libav" path="src/external/gstreamer-1.14.4/gst-libav" revision="refs/heads/gstreamer.lnx.1.0.r4-rel"/>
+  <project name="clo/le/gstreamer-1.14.4/gst-omx" path="src/external/gstreamer-1.14.4/gst-omx" revision="refs/heads/gstreamer.lnx.1.0.r4-rel"/>
+  <project name="clo/le/gstreamer-1.14.4/gst-plugins-bad" path="src/external/gstreamer-1.14.4/gst-plugins-bad" revision="refs/heads/gstreamer.lnx.1.0.r4-rel"/>
+  <project name="clo/le/gstreamer-1.14.4/gst-plugins-base" path="src/external/gstreamer-1.14.4/gst-plugins-base" revision="refs/heads/gstreamer.lnx.1.0.r4-rel"/>
+  <project name="clo/le/gstreamer-1.14.4/gst-plugins-good" path="src/external/gstreamer-1.14.4/gst-plugins-good" revision="refs/heads/gstreamer.lnx.1.0.r4-rel"/>
+  <project name="clo/le/gstreamer-1.14.4/gst-plugins-ugly" path="src/external/gstreamer-1.14.4/gst-plugins-ugly" revision="refs/heads/gstreamer.lnx.1.0.r4-rel"/>
+  <project name="clo/le/gstreamer-1.14.4/gst-rtsp-server" path="src/external/gstreamer-1.14.4/gst-rtsp-server" revision="refs/heads/gstreamer.lnx.1.0.r4-rel"/>
+  <project name="clo/le/gstreamer-1.14.4/gstreamer" path="src/external/gstreamer-1.14.4/gstreamer" revision="refs/heads/gstreamer.lnx.1.0.r4-rel"/>
+  <project name="clo/le/gstreamer-1.14.4/gstreamer-vaapi" path="src/external/gstreamer-1.14.4/gstreamer-vaapi" revision="refs/heads/gstreamer.lnx.1.0.r4-rel"/>
+  <project name="clo/le/mdm/reboot-daemon" path="mdm-ss-mgr/reboot-daemon" revision="refs/heads/mdm-ss-mgr.lnx.2.0.r7-rel"/>
+  <project name="clo/le/meta-qti-adk" path="poky/meta-qti-adk" revision="refs/heads/adk-meta.lnx.1.0.r10-rel"/>
+  <project name="clo/le/meta-qti-aosphal-adaptation" path="poky/meta-qti-aosphal-adaptation" revision="refs/heads/aosphal-le-adaptation.lnx.1.1.r3-rel"/>
+  <project name="clo/le/meta-qti-audio" path="poky/meta-qti-audio" revision="refs/heads/audio-hal.lnx.8.2.r5-rel"/>
+  <project name="clo/le/meta-qti-bt" path="poky/meta-qti-bt" revision="refs/heads/bt.lnx.le.2.0.r3-rel"/>
+  <project name="clo/le/meta-qti-core" path="poky/meta-qti-core" revision="refs/heads/core-technologies.lnx.3.0.r135-rel"/>
+  <project name="clo/le/meta-qti-data" path="poky/meta-qti-data" revision="refs/heads/data.lnx.1.0.2.r1-rel"/>
+  <project name="clo/le/meta-qti-display" path="disregard/poky/meta-qti-display" revision="refs/heads/display.lnx.3.6.r7-rel"/>
+  <project name="clo/le/meta-qti-gfx-kernel" path="poky/meta-qti-gfx-kernel" revision="refs/heads/gfx-kernel.lnx.14.0.r4-rel"/>
+  <project name="clo/le/meta-qti-gst" path="poky/meta-qti-gst" revision="refs/heads/le-gstreamer.lnx.2.0.r8-rel"/>
+  <project name="clo/le/meta-qti-location" path="disregard/poky/meta-qti-location" revision="refs/heads/location.lnx.5.0.r35-rel"/>
+  <project name="clo/le/meta-qti-qsap" path="poky/meta-qti-qsap" revision="refs/heads/le-qsap.lnx.2.0.r11-rel"/>
+  <project name="clo/le/meta-qti-security" path="poky/meta-qti-security" revision="refs/heads/sec-userspace.lnx.13.0.r45-rel"/>
+  <project name="clo/le/meta-qti-ss-mgr" path="poky/meta-qti-ss-mgr" revision="refs/heads/mdm-ss-mgr.lnx.2.0.r7-rel"/>
+  <project name="clo/le/meta-qti-video" path="disregard/poky/meta-qti-video" revision="refs/heads/video-userspace.lnx.2.3.r1-rel"/>
+  <project name="clo/le/meta-qti-wlan" path="poky/meta-qti-wlan" revision="refs/heads/wlan-service-mdm.lnx.2.0.r3-rel"/>
+  <project name="clo/le/meta-webkit" path="disregard/poky/meta-webkit" revision="refs/heads/adk-meta.lnx.1.0.r10-rel"/>
+  <project name="clo/la/platform/external/compat-wireless" path="disregard/external/compat-wireless" revision="refs/heads/data.lnx.1.0.2.r1-rel"/>
+  <project name="clo/le/platform/external/libdrm" path="src/display/libdrm" revision="refs/heads/display.lnx.3.6.r7-rel"/>
+  <project name="clo/la/platform/external/wpa_supplicant_8" path="src/external/wpa_supplicant_8" revision="refs/heads/wlan-ks-service.lnx.6.0.r4-rel"/>
+  <project groups="qcom,default" name="clo/le/platform/hardware/qcom/audio" path="src/hardware/qcom/audio" revision="refs/heads/audio-hal.lnx.8.2.r5-rel"/>
+  <project name="clo/la/platform/hardware/qcom/bt" path="src/hardware/qcom/bt" revision="refs/heads/bt.lnx.le.2.0.r3-rel"/>
+  <project groups="qcom,default" name="clo/le/platform/hardware/qcom/display" path="src/display/display-hal" revision="refs/heads/display.lnx.3.6.r7-rel"/>
+  <project name="clo/la/platform/hardware/qcom/gps" path="hardware/qcom/gps" revision="refs/heads/location.lnx.5.0.r35-rel"/>
+  <project name="clo/le/platform/hardware/qcom/media" path="src/hardware/qcom/media" revision="refs/heads/video-userspace.lnx.2.3.r1-rel"/>
+  <project name="clo/le/platform/hardware/qcom/wlan" path="src/hardware/qcom/wlan" revision="refs/heads/wlan-aosp.lnx.7.0.r48-rel"/>
+  <project name="clo/le/platform/init_mss" path="mdm-ss-mgr/init_mss" revision="refs/heads/mdm-ss-mgr.lnx.2.0.r7-rel"/>
+  <project name="clo/le/platform/qcom-opensource/bt" path="src/qcom-opensource/bt" revision="refs/heads/bt.lnx.le.2.0.r3-rel"/>
+  <project name="clo/le/platform/qcom-opensource/bt-daemon" path="src/vendor/qcom/opensource/bt-daemon" revision="refs/heads/adk-system.lnx.1.0.r8-rel"/>
+  <project name="clo/le/platform/vendor/opensource/audio-kernel" path="src/vendor/qcom/opensource/audio-kernel/legacy" revision="refs/heads/audio-kernel.lnx.5.15.r40-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/adk-config" path="src/vendor/qcom/opensource/adk-config" revision="refs/heads/adk-system.lnx.1.0.r8-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/adk-data" path="src/vendor/qcom/opensource/adk-data" revision="refs/heads/adk-system.lnx.1.0.r8-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/adk-iot-sys" path="src/vendor/qcom/opensource/adk-iot-sys" revision="refs/heads/adk-system.lnx.1.0.r8-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/adk-ipc" path="src/vendor/qcom/opensource/adk-ipc" revision="refs/heads/adk-system.lnx.1.0.r8-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/adk-managers" path="src/vendor/qcom/opensource/adk-managers" revision="refs/heads/adk-system.lnx.1.0.r8-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/adk-mediaplayer-lib" path="src/vendor/qcom/opensource/adk-mediaplayer-lib" revision="refs/heads/adk-audio-apps.lnx.1.0.r8-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/adk-message-lib" path="src/vendor/qcom/opensource/adk-message-lib" revision="refs/heads/adk-system.lnx.1.0.r8-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/adk-tools" path="src/vendor/qcom/opensource/adk-tools" revision="refs/heads/adk-system.lnx.1.0.r8-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/adk-utils" path="src/vendor/qcom/opensource/adk-utils" revision="refs/heads/adk-system.lnx.1.0.r8-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/adk-voice-ui-framework" path="src/vendor/qcom/opensource/adk-voice-ui-framework" revision="refs/heads/adk-voice-ui-framework.lnx.1.0.r8-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/audio-hal/st-hal" path="src/audio/mm-audio/st-hal" revision="refs/heads/audio-hal.lnx.8.2.r5-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/bluetooth" path="src/vendor/qcom/opensource/bluetooth" revision="refs/heads/bt.lnx.le.2.0.r3-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/bluetooth-le" path="src/vendor/qcom/opensource/bluetooth-le" revision="refs/heads/bt.lnx.le.2.0.r3-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/bluetooth_ext" path="src/vendor/qcom/opensource/bluetooth_ext" revision="refs/heads/bt.lnx.le.2.0.r3-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/bt-kernel" path="src/vendor/qcom/opensource/bt-kernel" revision="refs/heads/bt.lnx.le.2.0.r3-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="disregard/data-ipa-cfg-mgr" revision="refs/heads/data.lnx.1.0.2.r1-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/data-kernel" path="disregard/data-kernel" revision="refs/heads/data.lnx.1.0.2.r1-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/dataservices" path="src/data-oss" revision="refs/heads/data.lnx.1.0.2.r1-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/kernel-tests/mm-audio" path="qcom-opensource/mm-audio" revision="refs/heads/audio-mdm.lnx.1.0.r31-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/shortcut-fe" path="disregard/shortcut-fe" revision="refs/heads/data.lnx.1.0.2.r1-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/system/bt" path="src/vendor/qcom/opensource/system/bt" revision="refs/heads/bt.lnx.le.2.0.r3-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/tcp-splice" path="disregard/tcp-splice" revision="refs/heads/data.lnx.1.0.2.r1-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/tools" path="src/vendor/qcom/opensource/tools" revision="refs/heads/opensource-tools.lnx.1.0.r249-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/fw-api" path="src/wlan/fw-api" revision="refs/heads/wlan-api.lnx.1.0.r227-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/platform" path="src/wlan/platform" revision="refs/heads/wlan-platform.lnx.1.0.r54-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="src/wlan/qca-wifi-host-cmn" revision="refs/heads/wlan-cmn.driver.lnx.2.0.9.r9-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="src/wlan/qcacld-3.0" revision="refs/heads/wlan-cld3.driver.lnx.2.0.9.r9-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="src/wlan/utils/sigma-dut" revision="refs/heads/wlan-service-mcc.lnx.1.0.r49-rel"/>
+  <project name="clo/la/platform/vendor/qcom/opensource/audio-kernel-ar" path="src/vendor/qcom/opensource/audio-kernel" revision="refs/heads/audio-kernel.lnx.5.15.r40-rel"/>
+  <project name="clo/la/platform/vendor/qcom/opensource/graphics-kernel" path="src/vendor/qcom/opensource/graphics-kernel" revision="refs/heads/gfx-kernel.lnx.14.0.r4-rel"/>
+  <project name="clo/le/platform/vendor/qcom/opensource/psi_daemon" path="vendor/qcom/opensource/psi_daemon" revision="refs/heads/kernel.apps.lnx.1.0.r109-rel"/>
+  <project name="clo/le/platform/vendor/qcom/opensource/securemsm-kernel" path="src/vendor/qcom/opensource/securemsm-kernel" revision="refs/heads/sec-kernel.lnx.13.1.r43-rel"/>
+  <project name="clo/le/platform/vendor/qcom/wlan" path="src/device/qcom/wlan" revision="refs/heads/wlan-service-mcc.lnx.1.0.r49-rel"/>
+  <project name="clo/le/pmipv6" path="disregard/pmipv6" revision="refs/heads/data.lnx.1.0.2.r1-rel"/>
+  <project name="clo/le/pulseaudio" path="src/external/pulseaudio" revision="refs/heads/pulseaudio.lnx.1.0.r15-rel"/>
+  <project name="clo/le/qcom-opensource/mdm-init" path="src/mdm-init" revision="refs/heads/wlan-service-mdm.lnx.2.0.r3-rel"/>
+  <project name="clo/le/wayland/weston" path="display/weston" revision="refs/heads/display.lnx.3.6.r7-rel"/>
+</manifest>
