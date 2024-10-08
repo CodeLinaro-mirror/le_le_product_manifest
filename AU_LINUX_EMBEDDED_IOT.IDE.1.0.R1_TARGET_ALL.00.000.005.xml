@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="clo" fetch="https://git.codelinaro.org" review="codelinaro.org"/>
+  <default remote="clo" revision="refs/heads/IOT.IDE.1.0"/>
+  <project name="clo/le/qccsdk/oss/qccide" path="comp/qccide" revision="ca486c4387815a7bb9eab6d0b16395a24d87fb2f" upstream="refs/heads/qccide.iot.1.0.r1-rel"/>
+</manifest>
