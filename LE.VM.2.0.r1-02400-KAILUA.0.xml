@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <refs>
+    <image bins_path="src/kernel-5.15" name="KERNEL.PLATFORM.2.0.r11" project="kernelplatform/manifest" server="git://git-android.quicinc.com" src_path="src/kernel-5.15" tag="AU_LINUX_KERNEL.PLATFORM.2.0.R11.00.00.00.021.052" targets="kalamale_roboticsvm"/>
+    <image bins_path="." name="LE.FRAMEWORK.2.0.r1" project="le/framework/manifest" server="git://git-android.quicinc.com" src_path="." tag="AU_LINUX_EMBEDDED_LE.FRAMEWORK.2.0.R1_TARGET_ALL.01.01.116" targets="alp"/>
+  </refs>
+  <remote name="clo" fetch="https://git.codelinaro.org" review="codelinaro.org"/>
+  <default remote="clo" revision="refs/heads/LE.VM.2.0.r1"/>
+  <project name="clo/le/meta-qti-security" path="disregard/poky/meta-qti-security" revision="0ab310d3b82f93a27ec9bbcfa4d9a597cf23b1f3" upstream="refs/heads/sec-userspace.lnx.13.0.r53-rel"/>
+  <project name="clo/le/meta-ros" path="poky/meta-ros" revision="0594aa40b617344f6351dfbc9d05a6688c81a862" upstream="refs/heads/ros-core-humble.lnx.1.0.r4-rel"/>
+  <project name="clo/la/platform/external/rust/crates/simplelog" path="disregard/src/external/rust/crates/simplelog" revision="b2d25e663deaa1e8294c6bf94942eca8d86ae4c2" upstream="refs/heads/robotics-android-core-sys.lnx.13.0.r1-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/crosvm-gunyah" path="disregard/src/vendor/qcom/opensource/crosvm-gunyah" revision="55de9f111027c943ff1e1fa031a0f3cce51ff578" upstream="refs/heads/robotics-android-core-sys.lnx.13.0.r1-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/roboticsvm" path="src/vendor/qcom/opensource/roboticsvm" revision="062f63147743ac57a74e2b22ed7e8a824f04311f" upstream="refs/heads/robotics-android-core-sys.lnx.13.0.r1-rel"/>
+  <project name="clo/le/qc/components/recipes-roboticsvm" path="poky/meta-qti-bsp/recipes-roboticsvm" revision="c8d8509f9f111a19517442dd01c0369d9d4e3436" upstream="refs/heads/robotics-android-core-sys.lnx.13.0.r1-rel"/>
+  <project name="clo/le/ros-perception/image_pipeline" path="src/ros/ros-perception/image_pipeline" revision="975548a97abf5de7cdebfd0c8be6712fe128bcee" upstream="refs/heads/ros-core-humble.lnx.1.0.r4-rel"/>
+  <project name="clo/le/ros-perception/image_transport_plugins" path="src/ros/ros-perception/image_transport_plugins" revision="ef9442d8e92c14dcb5ed9023b9577e6d9e5cad39" upstream="refs/heads/ros-core-humble.lnx.1.0.r4-rel"/>
+</manifest>
