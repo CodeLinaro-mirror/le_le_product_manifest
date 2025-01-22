@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <refs>
+    <image name="LKP.QCLINUX.1.0.R1" project="kernelplatform/manifest" server="https://git.codelinaro.org/clo/la" tag="AU_LINUX_LKP.QCLINUX.1.0.R1.00.00.00.204.045" targets="dummy"/>
+  </refs>
+  <remote fetch="https://git.codelinaro.org/clo/le" name="clo-le"/>
+  <remote fetch="https://git.codelinaro.org/clo/ype" name="clo-ype"/>
+  <default remote="clo-le" revision="dummy_revision" sync-c="true" sync-tags="false"/>
+  <project remote="clo-le" name="display/libgbm" path="sources/display/vendor/qcom/opensource/display/libgbm" revision="5eb3c08f78412718642498ba95178ee1b974a0d7" upstream="refs/heads/display.qclinux.1.0.r1-rel"/>
+  <project remote="clo-ype" name="external/github.com/uptane/meta-updater" path="layers/meta-updater" revision="fa550d14caebb16fede2a428ac0db66f2d0f893b" upstream="refs/heads/clo/scarthgap" groups="hwe"/>
+  <project remote="clo-ype" name="external/openembedded.org/meta-openembedded" path="layers/meta-openembedded" revision="c04b722e9b38631e78dc6ca0e03d571e23ed28a2" upstream="refs/heads/clo/openembeded.org/scarthgap" groups="hwe"/>
+  <project remote="clo-ype" name="external/yoctoproject.org/meta-qcom" path="layers/meta-qcom" revision="ec80a36bce11d8182b4bb2a6fa0359adfeccde0a" upstream="refs/heads/clo/external/scarthgap" groups="hwe"/>
+  <project remote="clo-ype" name="external/yoctoproject.org/meta-security" path="layers/meta-security" revision="bc865c5276c2ab4031229916e8d7c20148dfbac3" upstream="refs/heads/clo/yoctoproject.com/scarthgap" groups="hwe"/>
+  <project remote="clo-ype" name="external/yoctoproject.org/meta-selinux" path="layers/meta-selinux" revision="3aff015697fa056b4af83b1c9ba44eca346a8a37" upstream="refs/heads/clo/yocto/scarthgap" groups="hwe"/>
+  <project remote="clo-ype" name="external/yoctoproject.org/meta-tensorflow" path="layers/meta-tensorflow" revision="29f2042fb04f42eb1b56564965fb4460c8b7ffc7" upstream="refs/heads/clo/master" groups="hwe"/>
+  <project remote="clo-ype" name="external/yoctoproject.org/meta-virtualization" path="layers/meta-virtualization" revision="450941a1b6df96285691e8c23d4f332d3c88a994" upstream="refs/heads/clo/yocto/scarthgap" groups="hwe"/>
+  <project remote="clo-ype" name="external/yoctoproject.org/poky" path="layers/poky" revision="2541a8171f91812a4b16e7dc4da0d77d2318a256" upstream="refs/heads/clo/yocto/scarthgap" groups="hwe"/>
+  <project remote="clo-le" name="le-utils" path="sources/le-utils" revision="3f988182a0a25717a7307fb24c529ec1be3affa2" upstream="refs/heads/le-utils.qclinux.1.0.r2-rel"/>
+  <project remote="clo-le" name="mobile-broadband/libmbim" path="sources/mobile-broadband/libmbim" revision="8415687e4f30ae5e36f407f179c8147f1529725c" upstream="refs/heads/telephony.qclinux.0.0.r1-rel"/>
+  <project remote="clo-le" name="mobile-broadband/libqmi" path="sources/mobile-broadband/libqmi" revision="3f07d6e5b4677558543b3b4484ea88ad92257e92" upstream="refs/heads/telephony.qclinux.0.0.r1-rel"/>
+  <project remote="clo-le" name="mobile-broadband/libqrtr-glib" path="sources/mobile-broadband/libqrtr-glib" revision="7586514fbe1580e042039519bcc6dec537ded40a" upstream="refs/heads/telephony.qclinux.0.0.r1-rel"/>
+  <project remote="clo-le" name="mobile-broadband/ModemManager" path="sources/mobile-broadband/ModemManager" revision="add042cdd0a58203c0cffe41de98f40d1184eb74" upstream="refs/heads/telephony.qclinux.0.0.r1-rel"/>
+  <project remote="clo-le" name="platform/hardware/qcom/bt" path="sources/bluetooth/libbt-vendor" revision="216da8dd028c739e82869447e64675f3c712ecf7" upstream="refs/heads/bt-performant.qclinux.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/hardware/qcom/display" path="sources/display/hardware/qcom/display" revision="49cf5322d635b25c1cbac4b893d70d7009fb26e6" upstream="refs/heads/display.qclinux.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/hardware/qcom/gps" path="sources/hardware/qcom/gps" revision="464279595e7b77a9edc3d8a1234d688d7bfa15e5" upstream="refs/heads/location.lnx.8.5.r1-rel"/>
+  <project remote="clo-le" name="platform/hardware/qcom/wlan" path="sources/hardware/qcom/wlan" revision="a6d801edeb68336a2fb730c33e502c3a742327b3" upstream="refs/heads/wlan-os-service.qclinux.1.1.r1-rel"/>
+  <project remote="clo-le" name="platform/qcom-opensource/bt" path="sources/bluetooth/btapp" revision="7a71dcfa0b04ee88fc03af310d947362f7336fa1" upstream="refs/heads/bt-performant.qclinux.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/system/memory_repo" path="sources/system/memory" revision="ee1163c598ba2a1a0c0f53b97b3e063665695817" upstream="refs/heads/memory-le-apps.lnx.1.0.r35-rel"/>
+  <project remote="clo-le" name="platform/system/memory/libdmabufheap" path="sources/system/memory/libdmabufheap" revision="37bf33001a41b66676d6d1883982f0b14583fc02" upstream="refs/heads/memory-le-apps.lnx.1.0.r35-rel"/>
+  <project remote="clo-le" name="platform/system/memory/libmeminfo" path="sources/system/memory/libmeminfo" revision="e5690f41db4637600d40b74d7eb8207837edfb85" upstream="refs/heads/memory-le-apps.lnx.1.0.r35-rel"/>
+  <project remote="clo-le" name="platform/system/memory/libvmmem" path="sources/system/memory/libvmmem" revision="2b88e9bc6030893b8e9b46ae85999c8de103858d" upstream="refs/heads/kernel.apps.lnx.4.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/opensource/camera-devicetree" path="sources/vendor/qcom/opensource/camera-devicetree" revision="d759fb6e4e51390455934f9b67f99e52c317f91d" upstream="refs/heads/camera-kernel.qclinux.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/opensource/camera-kernel" path="sources/vendor/qcom/opensource/camera-kernel" revision="74afe2e8355143edd714199db2963114ad2b79c2" upstream="refs/heads/camera-kernel.qclinux.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/opensource/data-eth" path="sources/data-eth" revision="5f1f52ca95a7d1ea0ab83ea65f7381c8bc8a863e" upstream="refs/heads/data-kernel.qclinux.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/opensource/display-devicetree" path="sources/display/vendor/qcom/opensource/display-devicetree" revision="1f7a244be5a6a1b06d99ac77f3f54a63879a22d7" upstream="refs/heads/display-kernel.qclinux.1.0.r2-rel"/>
+  <project remote="clo-le" name="platform/vendor/opensource/display-drivers" path="sources/display/vendor/qcom/opensource/display-drivers" revision="6e4d041a88230869d25fa683f32984f804e04064" upstream="refs/heads/display-kernel.qclinux.1.0.r2-rel"/>
+  <project remote="clo-le" name="platform/vendor/opensource/eva-kernel" path="sources/cv/cv-kernel/eva-kernel" revision="8cb43809fe7b9febd55169079a2099e79d6e9073" upstream="refs/heads/eva-kernel.qclinux.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/opensource/iot-power-module" path="sources/vendor/qcom/opensource/iot-power-module" revision="9655eb561c2247af471f4cdd41e95aa2623bf0de" upstream="refs/heads/iot-power-module.apps.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/opensource/mm-drivers" path="sources/display/vendor/qcom/opensource/mm-drivers" revision="f8cb4d040d3071657d2c4f4aeed6b486efa0029e" upstream="refs/heads/display-kernel.qclinux.1.0.r2-rel"/>
+  <project remote="clo-le" name="platform/vendor/opensource/synx-kernel" path="sources/synx-kernel" revision="21adae551e0000c479db18c2f848b8544179a7ed" upstream="refs/heads/synx-kernel.lnx.1.2.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/opensource/touch-drivers" path="sources/touch/vendor/qcom/opensource/touch-drivers" revision="710d994cabab84ac76688932299036896354be49" upstream="refs/heads/touch-kernel.qclinux.1.0.r2-rel"/>
+  <project remote="clo-le" name="platform/vendor/opensource/video-devicetree" path="sources/vendor/qcom/opensource/video-devicetree" revision="b570d7733427ca77496202ff4d87949e191aab86" upstream="refs/heads/video.qclinux.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/opensource/video-driver" path="sources/vendor/qcom/opensource/video-driver" revision="89163405816b65669f47f3b8c6795bf4e254e82e" upstream="refs/heads/video.qclinux.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/args" path="sources/audio/opensource/args" revision="7b9d0d6f418983328b6eae1bbc8022ff865c3eef" upstream="refs/heads/audio-core.lnx.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/audio-utils" path="sources/audio/opensource/audio-utils" revision="a97b4e4c84ff0ee4826af0ef489c7e8843b7536a" upstream="refs/heads/audio-utils.lnx.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/audio_ftm" path="sources/audio/opensource/audio_ftm" revision="9c1700d019ea0f53fb26f080829580c6d7fd55f0" upstream="refs/heads/audio-core.lnx.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/audio_mcs" path="sources/audio/opensource/audio_mcs" revision="189b1125ef96318ba4949f3a1900219c5c163ff4" upstream="refs/heads/audio-core.lnx.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/audioreach-conf" path="sources/audio/opensource/audioreach-conf" revision="4e98e31ff7f76934366e152ecf7416a7efce9f8e" upstream="refs/heads/audio-core.lnx.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/bluetooth" path="sources/bluetooth/bt_audio" revision="1710c237b493454dc93f41de09b50cd8d109f970" upstream="refs/heads/bt-performant.qclinux.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/bluetooth_ext" path="sources/bluetooth/stack/bluetooth_ext" revision="996bbb712e62c5c22489cd84fad1a93a91d65ddc" upstream="refs/heads/bt-performant.qclinux.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/bt-devicetree" path="sources/bluetooth/bt-devicetree" revision="bf9d4e3a5139a919099ace5978317e9e6f129507" upstream="refs/heads/bt-performant.qclinux.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/bt-kernel" path="sources/bluetooth/bt-kernel" revision="266a745152915d9a68cb40d7d397ebc77b3e1874" upstream="refs/heads/bt-performant.qclinux.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/iot-core-oss" path="sources/vendor/qcom/opensource/iot-core-oss" revision="76f7e73fc380619240288587e0d50f110c17c31d" upstream="refs/heads/iot-core-algs.lnx.1.0.r17-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/le-services" path="sources/le-camera-server" revision="c50e61a29b7d92bae8aa5c6c52db5412604f778e" upstream="refs/heads/le-services.lnx.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/location" path="sources/qcom-opensource/location" revision="9c0ca2ce0eca1b3e41556b742f42befdf32e75eb" upstream="refs/heads/location.lnx.8.5.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/pulseaudio-plugin" path="sources/audio/opensource/pulseaudio-plugins" revision="bb51f6b4f907956d5eeed1190b97242bc7ea7aa2" upstream="refs/heads/audio-algos.lnx.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/sensing-hub" path="sources/sensors/sensing-hub" revision="93a45a2199f8e0a360c1a8ec90b024c49af179cc" upstream="refs/heads/sensors.lnx.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/sigma-dut" path="sources/wlan/utils/sigma-dut" revision="e0e36f765531112d502db57f233ad2059c3d3495" upstream="refs/heads/wlan-os-service.qclinux.1.1.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/synx-devicetree" path="sources/synx-devicetree" revision="10d8187573c5a832a32eacd48df075322f47ae4e" upstream="refs/heads/synx-devicetree.lnx.1.3.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/system/bt" path="sources/bluetooth/stack/system/bt" revision="c96740fc959230259215e77b31fac499b8aa3e1f" upstream="refs/heads/bt-performant.qclinux.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/wlan/fw-api" path="sources/wlan/fw-api" revision="9f2755a33c9c024e7deab054dc5a1bb58f66a6d4" upstream="refs/heads/wlan-api.lnx.1.0.r230-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/wlan/platform" path="sources/wlan/platform" revision="20ee98faaff14a91a99552778ba692f02ce9b688" upstream="refs/heads/wlan-platform.qclinux.1.0.r2-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="sources/wlan/qca-wifi-host-cmn" revision="f268837ec07f8b49e053ab269028576f71f2cd17" upstream="refs/heads/wlan-cmn.driver.lnx.2.0.14.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="sources/wlan/qcacld-3.0" revision="bda960e96318f4ad4596de95a0c328717b3926e3" upstream="refs/heads/wlan-cld3.driver.lnx.2.0.14.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/wlan/wlan-devicetree" path="sources/wlan/wlan-devicetree" revision="a0485a43966e5bb4e8b407260d179fa0285a8b68" upstream="refs/heads/wlan-platform.qclinux.1.0.r2-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/wpa_supplicant_8" path="sources/wlan/wpa_supplicant_8" revision="a4fcc3eaae750821dfbcf27351dc598824f92ab8" upstream="refs/heads/wlan-os-service.qclinux.1.1.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/agm" path="sources/audio/opensource/agm" revision="9f3ac06849770b216d554a3941011742cdd7aebb" upstream="refs/heads/audio-core.lnx.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/arpal-lx" path="sources/audio/opensource/arpal-lx" revision="f7a0490320d4ed30fb4f4ab49734bf11891e1fe3" upstream="refs/heads/audio-core.lnx.1.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/graphics-devicetree" path="sources/graphics-devicetree" revision="c2771103aba00fd105dc847cc9cb6446ace38b72" upstream="refs/heads/gfx-kernel.le.0.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/graphics-kernel" path="sources/graphics-kernel" revision="97f7a732b4c05eba11dda475c350a883f2481e09" upstream="refs/heads/gfx-kernel.le.0.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/ss-restart" path="sources/ss-restart" revision="4541e993a9f8ee40cfdea2521ac3621ceadb2f00" upstream="refs/heads/kernel.apps.lnx.4.0.r1-rel"/>
+  <project remote="clo-le" name="qcom-opensource/mdm-init" path="sources/mdm-init" revision="b696e6ca813ef9be0d21ceb55842cf93f656d98d" upstream="refs/heads/wlan-os-service.qclinux.1.1.r1-rel"/>
+  <project remote="clo-le" name="sources/qspa" path="sources/qspa" revision="a1151aa493f8154a842c482d5e5b0978bfebbc0d" upstream="refs/heads/core.lnx.1.0.r1-rel"/>
+  <project remote="clo-le" name="wayland/weston" path="sources/display/vendor/qcom/opensource/display/weston" revision="76e41b855662929698d17e7b216a7cac6ecef6a9" upstream="refs/heads/display.qclinux.1.0.r1-rel"/>
+</manifest>
