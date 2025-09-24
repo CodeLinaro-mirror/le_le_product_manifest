@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://git.codelinaro.org/clo/le" name="clo-le"/>
-  <remote fetch="https://git.codelinaro.org/clo/ype" name="clo-ype"/>
+    <remote fetch="https://git.codelinaro.org/clo/le" name="clo-le"/>
+    <remote fetch="https://git.codelinaro.org/clo/ype" name="clo-ype"/>
   <default remote="clo-le" revision="dummy_revision" sync-c="true" sync-tags="false"/>
   <project remote="clo-le" name="display/libgbm" path="sources/display/vendor/qcom/opensource/display/libgbm" revision="f69fb41c35f4a34544c1811d2d06a2f3216b8053" upstream="refs/heads/display.qclinux.0.0"/>
   <project remote="clo-ype" name="external/openembedded.org/bitbake" path="layers/bitbake" revision="bcf090ed631bbd523a5341baebba0765f1a847f8" upstream="refs/heads/clo/openembedded.org/master"/>
