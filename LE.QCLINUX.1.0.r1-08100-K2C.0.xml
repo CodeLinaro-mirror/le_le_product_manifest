@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <refs>
-    <image name="LKP.QCLINUX.1.0.R1" project="kernelplatform/manifest" server="https://git.codelinaro.org/clo/la" tag="AU_LINUX_LKP.QCLINUX.1.0.R1.00.00.00.204.057" targets="dummy"/>
-  </refs>
-  <remote fetch="https://git.codelinaro.org/clo/le" name="clo-le"/>
-  <remote fetch="https://git.codelinaro.org/clo/ype" name="clo-ype"/>
+    <remote fetch="https://git.codelinaro.org/clo/le" name="clo-le"/>
+    <remote fetch="https://git.codelinaro.org/clo/ype" name="clo-ype"/>
   <default remote="clo-le" revision="dummy_revision" sync-c="true" sync-tags="false"/>
   <project remote="clo-le" name="display/libgbm" path="sources/display/vendor/qcom/opensource/display/libgbm" revision="f53e08166dbe75113d466cf8f78497a1ca24668d" upstream="refs/heads/display.qclinux.1.0.r1-rel"/>
   <project remote="clo-ype" name="external/github.com/uptane/meta-updater" path="layers/meta-updater" revision="b275153c9c8ea09e27d41db9f2faba3ebf92d2c2" upstream="refs/heads/clo/scarthgap" groups="hwe"/>
