@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote fetch="https://git.codelinaro.org/clo/le" name="clo-le"/>
+  <default remote="clo-le" revision="dummy_revision" sync-c="true" sync-tags="false"/>
+  <project remote="clo-le" name="display/libgbm" path="sources/display/vendor/qcom/opensource/display/libgbm" revision="9c8f7df567df1713eb0f0942630b47a5b0e06d7f" upstream="refs/heads/display.qclinux.1.0.r5-rel"/>
+  <project remote="clo-le" name="le-utils" path="sources/le-utils" revision="94ad424e5bc9b01e9b05ae0b37ff71b49628c77c" upstream="refs/heads/le-utils.qclinux.1.0.r7-rel"/>
+  <project remote="clo-le" name="platform/hardware/qcom/display" path="sources/display/hardware/qcom/display" revision="24b3595780662a6efe9f6364c3bf84f856a04c68" upstream="refs/heads/display.qclinux.1.0.r5-rel"/>
+  <project remote="clo-le" name="platform/system/memory_repo" path="sources/system/memory" revision="ee1163c598ba2a1a0c0f53b97b3e063665695817" upstream="refs/heads/memory-le-apps.lnx.3.0.r2-rel"/>
+  <project remote="clo-le" name="platform/system/memory/libdmabufheap" path="sources/system/memory/libdmabufheap" revision="4c97af86040ebd79cc31c94268f9c6459222b6e9" upstream="refs/heads/memory-le-apps.lnx.3.0.r2-rel"/>
+  <project remote="clo-le" name="platform/system/memory/libmeminfo" path="sources/system/memory/libmeminfo" revision="e5690f41db4637600d40b74d7eb8207837edfb85" upstream="refs/heads/memory-le-apps.lnx.3.0.r2-rel"/>
+  <project remote="clo-le" name="platform/system/memory/libvmmem" path="sources/system/memory/libvmmem" revision="663f0219f4bc0bcf5b8bf5c43cb77b834bd51d6e" upstream="refs/heads/kernel.apps.lnx.4.0.r5-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/sensing-hub" path="sources/sensors/sensing-hub" revision="c2f028f0b905ba9728a85abe3faf1c80632b6df1" upstream="refs/heads/sensors.lnx.1.0.r10-rel"/>
+  <project remote="clo-le" name="wayland/weston" path="sources/display/vendor/qcom/opensource/display/weston" revision="83ae1584f528774ba745ad585dc5902d13d0be5c" upstream="refs/heads/display.qclinux.1.0.r5-rel"/>
+</manifest>
