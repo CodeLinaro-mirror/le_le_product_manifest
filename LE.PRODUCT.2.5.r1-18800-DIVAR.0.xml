@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <refs>
+    <image name="KERNEL.PLATFORM.2.0.R34" project="kernelplatform/manifest" server="https://git.codelinaro.org/clo/la" tag="AU_LINUX_KERNEL.PLATFORM.2.0.R34.00.00.00.116.027" targets="dummy"/>
+    <image name="LE.FRAMEWORK.2.0.R13" project="le/framework/manifest" server="https://git.codelinaro.org/clo/le" tag="AU_LINUX_EMBEDDED_LE.FRAMEWORK.2.0.R13_TARGET_ALL.01.10.061" targets="dummy"/>
+  </refs>
+    <remote fetch="https://git.codelinaro.org/clo/le" name="clo-le"/>
+    <remote fetch="https://git.codelinaro.org/clo/qsdk" name="clo-qsdk"/>
+    <remote fetch="https://git.codelinaro.org/clo/ype" name="clo-ype"/>
+  <default remote="clo-le" revision="dummy_revision" sync-c="true" sync-tags="false"/>
+  <project remote="clo-le" name="aosphal-adaptation" path="src/aosphal-adaptation" revision="758164be7c6b7005fa153fe029b8a8fe59374ac5" upstream="refs/heads/aosphal-le-adaptation.lnx.3.0.r7-rel"/>
+  <project remote="clo-le" name="display/libgbm" path="src/display/libgbm" revision="f3453dd18579d3ab92936ade8a9bf68fbe911cb2" upstream="refs/heads/display.lnx.6.8.r3-rel"/>
+  <project remote="clo-ype" name="external/yoctoproject.org/meta-virtualization" path="poky/meta-virtualization" revision="67b0ef4256a484851f3556d281ca4caa88374388" upstream="refs/heads/yocto-meta-virtualization.lnx.3.0.r1-rel"/>
+  <project remote="clo-le" name="fs/external/mtd-utils" path="src/filesystems/mtd-utils" revision="8d816d3e16562841cbfc5b82befc5914febb81f3" upstream="refs/heads/core-technologies.lnx.13.0.r33-rel"/>
+  <project remote="clo-le" name="mdm/reboot-daemon" path="src/mdm-ss-mgr/reboot-daemon" revision="4895d8d8ff53cd7eff4a3025461a5c6fe3162752" upstream="refs/heads/mdm-ss-mgr.lnx.2.0.r18-rel"/>
+  <project remote="clo-le" name="meta-qti-agm" path="poky/meta-qti-agm" revision="cc5267b01f6135b8c684f0c39a8960939bfbb088" upstream="refs/heads/audio-platform-arintf.lnx.1.0.r116-rel"/>
+  <project remote="clo-le" name="meta-qti-aosphal-adaptation" path="poky/meta-qti-aosphal-adaptation" revision="955df3262899c1370689ab26c0d5cb8c561a45ed" upstream="refs/heads/aosphal-le-adaptation.lnx.3.0.r7-rel"/>
+  <project remote="clo-le" name="meta-qti-arpal" path="poky/meta-qti-arpal" revision="66a7b9e8849087fc978b4a4f66bd3ce392fc9471" upstream="refs/heads/audio-platform-arintf.lnx.1.0.r116-rel"/>
+  <project remote="clo-le" name="meta-qti-audio" path="poky/meta-qti-audio" revision="9bd195235f708cf1c1a2053d16ed6f5998a86d5b" upstream="refs/heads/audio-android-hal.lnx.3.0.r26-rel"/>
+  <project remote="clo-le" name="meta-qti-bt" path="poky/meta-qti-bt" revision="d20b5011f0f56fb8ba00bd80984a623860092864" upstream="refs/heads/bt.lnx.le.4.0.r3-rel"/>
+  <project remote="clo-le" name="meta-qti-camera" path="poky/meta-qti-camera" revision="770f72ab8acb55295a6cd2138b56c31ec3e1a07b" upstream="refs/heads/camera.lnx.iot.meta.4.1.r1-rel"/>
+  <project remote="clo-le" name="meta-qti-core" path="poky/meta-qti-core" revision="c5c27cfe177a2b2be3e4be731a8a45ebfe6b1e38" upstream="refs/heads/core-technologies.lnx.13.0.r33-rel"/>
+  <project remote="clo-le" name="meta-qti-data" path="poky/meta-qti-data" revision="17da1aa25ac006db7f6313b84bad0a9db5bb2505" upstream="refs/heads/data.lnx.1.1.3.r4-rel"/>
+  <project remote="clo-le" name="meta-qti-display" path="poky/meta-qti-display" revision="cee5d83292280f7e19c58a52519b1703c0a42ede" upstream="refs/heads/display.lnx.6.8.r3-rel"/>
+  <project remote="clo-le" name="meta-qti-eva" path="poky/meta-qti-eva" revision="aacdb62f6e2417aaaa2a17d300c83dd27aa62bc2" upstream="refs/heads/eva-kernel_i.lnx.1.0.r4-rel"/>
+  <project remote="clo-le" name="meta-qti-gfx-kernel" path="poky/meta-qti-gfx-kernel" revision="29a9a162e79ebb546bd2db7a41130e0614822d56" upstream="refs/heads/gfx-kernel.lnx.13.0.r15-rel"/>
+  <project remote="clo-le" name="meta-qti-gst" path="poky/meta-qti-gst" revision="570502036aeff4061e955be94a133de70fc28308" upstream="refs/heads/im-sdk.lnx.1.0.0.r4-rel"/>
+  <project remote="clo-le" name="meta-qti-location" path="poky/meta-qti-location" revision="4f20f62a9182906e5ef88d702d0e9324d32424ea" upstream="refs/heads/location.lnx.8.0.r47-rel"/>
+  <project remote="clo-le" name="meta-qti-ml" path="poky/meta-qti-ml" revision="e09a5ccba4ecbb261fd69a00bd4b739e0e6b707f" upstream="refs/heads/iot-ml.lnx.3.0.r9-rel"/>
+  <project remote="clo-le" name="meta-qti-qcawifi" path="poky/meta-qti-qcawifi" revision="fd37fcfc41b601575af3ede5aa94e10b70d763ea" upstream="refs/heads/qcawifi-service.lnx.3.0.r2-rel"/>
+  <project remote="clo-le" name="meta-qti-qmmf" path="poky/meta-qti-qmmf" revision="a858f181d36f6d8983bae633a8373b220956d0aa" upstream="refs/heads/meta-qti-qmmf-recipes.lnx.2.1.r7-rel"/>
+  <project remote="clo-le" name="meta-qti-security" path="poky/meta-qti-security" revision="a6dc17b3e3c071eb70c1ce8f3942e93f796d5232" upstream="refs/heads/sec-userspace.lnx.13.0.r75-rel"/>
+  <project remote="clo-le" name="meta-qti-ss-mgr" path="poky/meta-qti-ss-mgr" revision="051a1e95dc58d68033e54983dc6e48a2f8916740" upstream="refs/heads/mdm-ss-mgr.lnx.2.0.r18-rel"/>
+  <project remote="clo-le" name="meta-qti-touch" path="poky/meta-qti-touch" revision="77937247b4711e548c524b5c0af486ed6572759d" upstream="refs/heads/touch-kernel.lnx.5.15.r33-rel"/>
+  <project remote="clo-le" name="meta-qti-wlan" path="poky/meta-qti-wlan" revision="05c744582d7ede540af84d85e550195fb5cd526a" upstream="refs/heads/wlan-service-mdm.lnx.2.0.r7-rel"/>
+  <project remote="clo-le" name="meta-ros" path="disregard/poky/meta-ros" revision="8e0fa4bffb0a3b2f443764fda88bb3420728f898" upstream="refs/heads/ros-core-humble.lnx.1.0.r5-rel"/>
+  <project remote="clo-qsdk" name="oss/wifi/qca-cnss" path="src/qcawifi/qca-cnss" revision="3b480b7c46026707c41b098b6d91142dce524e70" upstream="refs/heads/qcawifi-platform.lnx.3.0.r2-rel"/>
+  <project remote="clo-le" name="platform/external/adhd" path="src/external/adhd" revision="7c773666a68cc476b0799df0625be879a42b57c0" upstream="refs/heads/robotics-vmm.lnx.1.0.r3-rel"/>
+  <project remote="clo-le" name="platform/external/compat-wireless" path="src/external/compat-wireless" revision="0143c07f3b1594a9259b7a0fe041deb5f4db8099" upstream="refs/heads/data.lnx.1.1.3.r4-rel"/>
+  <project remote="clo-le" name="platform/external/cros/system_api" path="src/external/cros/system_api" revision="be85ed137edc96d128ba3a90acff91cdb8ab0fe1" upstream="refs/heads/robotics-vmm.lnx.1.0.r3-rel"/>
+  <project remote="clo-le" name="platform/external/crosvm" path="src/external/crosvm" revision="7461c483986367a3284e2822b91fed0b45f2075f" upstream="refs/heads/robotics-vmm.lnx.1.0.r3-rel"/>
+  <project remote="clo-le" name="platform/external/libchromeos-rs" path="src/external/libchromeos-rs" revision="120d892dfc2f32e15cb77f170f252c6d7b85fa4e" upstream="refs/heads/robotics-vmm.lnx.1.0.r3-rel"/>
+  <project remote="clo-le" name="platform/external/minijail" path="src/external/minijail" revision="8cb44f9fc32f538a90b6a3f09d3941e26fe6d6f9" upstream="refs/heads/robotics-vmm.lnx.1.0.r3-rel"/>
+  <project remote="clo-le" name="platform/external/rust/crates/android_logger" path="src/external/rust/crates/android_logger" revision="7f4eca1ac49d9c7fc88cfa5f547ca09c7b5eace3" upstream="refs/heads/robotics-vmm.lnx.1.0.r3-rel"/>
+  <project remote="clo-le" name="platform/external/rust/crates/simplelog" path="src/external/rust/crates/simplelog" revision="b2d25e663deaa1e8294c6bf94942eca8d86ae4c2" upstream="refs/heads/robotics-android-core-sys.lnx.13.0.r3-rel"/>
+  <project remote="clo-le" name="platform/external/rust/crates/vmm_vhost" path="src/external/rust/crates/vmm_vhost" revision="b610256720b7e5ff47286e91590cd6f5af80188d" upstream="refs/heads/robotics-vmm.lnx.1.0.r3-rel"/>
+  <project remote="clo-le" name="platform/external/wpa_supplicant_8" path="src/external/wpa_supplicant_8" revision="5bba8af33ff290c1930c0508d425134e741f9070" upstream="refs/heads/wlan-ks-service.lnx.6.0.r7-rel"/>
+  <project remote="clo-le" name="platform/frameworks/ml" path="src/external/frameworks/ml" revision="a457c5ee39ef87274b363d14a402d1e202dd401f" upstream="refs/heads/iot-ml.lnx.3.0.r9-rel"/>
+  <project remote="clo-le" name="platform/hardware/qcom/audio-ar" path="src/vendor/qcom/opensource/audio-hal/primary-hal" revision="0667431552e7fba5515e52aaaa0f5a32d40a5306" upstream="refs/heads/audio-android-hal.lnx.3.0.r26-rel"/>
+  <project remote="clo-le" name="platform/hardware/qcom/bt" path="src/hardware/qcom/bt" revision="3dbf2daa472493719f328f6b7374a7267c30a306" upstream="refs/heads/bt.lnx.le.4.0.r3-rel"/>
+  <project remote="clo-le" name="platform/hardware/qcom/display" path="src/hardware/qcom/display" revision="6e58561dcddd162c2e7ca5e6d61063260e7febe7" upstream="refs/heads/display.lnx.6.8.r3-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-techpack.mk" src="config/display-techpack.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-product.mk" src="config/display-product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/display-board.mk" src="config/display-board.mk"/>
+  </project>
+  <project remote="clo-le" name="platform/hardware/qcom/gps" path="src/hardware/qcom/gps" revision="cad374d8cc1d9c24b7de1bf6808b9f14e2ee6ddf" upstream="refs/heads/location.lnx.8.0.r47-rel"/>
+  <project remote="clo-le" name="platform/hardware/qcom/thermal" path="disregard/vendor/qcom/opensource/thermal-hal" revision="37d60dd16014a5a1e96c9e37826b67f4594cf197" upstream="refs/heads/ppat-corepower.lnx.13.0.r69-rel"/>
+  <project remote="clo-le" name="platform/hardware/qcom/wlan" path="src/hardware/qcom/wlan" revision="08032c7188da5dc6c5ecc304352fd9f5c1202963" upstream="refs/heads/wlan-aosp.lnx.7.0.r61-rel"/>
+  <project remote="clo-le" name="platform/init_mss" path="src/mdm-ss-mgr/init_mss" revision="e1db20af1ebf5d99429161e3ad213d75acfb696c" upstream="refs/heads/mdm-ss-mgr.lnx.2.0.r18-rel"/>
+  <project remote="clo-le" name="platform/qcom-opensource/bt" path="src/qcom-opensource/bt" revision="170ca83f3705ed8231f64678b28d1120978f26b9" upstream="refs/heads/bt.lnx.le.4.0.r3-rel"/>
+  <project remote="clo-le" name="platform/vendor/opensource/audio-kernel" path="src/vendor/qcom/opensource/audio-kernel/legacy" revision="b9bc0a6fc9830f77bf3ffe04397b47fabc162ff6" upstream="refs/heads/audio-kernel.lnx.5.15.r59-rel"/>
+  <project remote="clo-le" name="platform/vendor/opensource/camera-kernel" path="src/vendor/qcom/opensource/camera-kernel" revision="f044b4e58724d3457e74497e6f25ca8d973a787a" upstream="refs/heads/camera-kernel.lnx.3.2.r4-rel"/>
+  <project remote="clo-le" name="platform/vendor/opensource/data-eth" path="disregard/kernel/msm-5.4/techpack/data-eth" revision="00969621198ce66679b3a348ad5fe38a51f25437" upstream="refs/heads/data-kernel.lnx.2.0.r47-rel"/>
+  <project remote="clo-le" name="platform/vendor/opensource/dataipa" path="src/dataipa" revision="b4c4428dfd5c7a073858741cd308c0ae63bc5706" upstream="refs/heads/data-kernel.lnx.2.0.r47-rel"/>
+  <project remote="clo-le" name="platform/vendor/opensource/display-drivers" path="src/display/vendor/qcom/opensource/display-drivers" revision="14be6e60c9ad68d217939f207219f90568629daa" upstream="refs/heads/display-kernel.lnx.5.15.2.r8-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display_driver_product.mk" src="display_driver_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/display_driver_board.mk" src="display_driver_board.mk"/>
+  </project>
+  <project remote="clo-le" name="platform/vendor/opensource/display/libdrm" path="src/display/libdrm" revision="a72ca162cb55dc2cc7d9b0319d1069725e4638f0" upstream="refs/heads/display.lnx.6.8.r3-rel"/>
+  <project remote="clo-le" name="platform/vendor/opensource/eva-kernel" path="src/vendor/qcom/opensource/eva-kernel" revision="d2f333767af75f5e5381d4ecda15172cb2d7c047" upstream="refs/heads/eva-kernel_i.lnx.1.0.r4-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/eva_kernel_product.mk" src="eva_kernel_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/eva_kernel_board.mk" src="eva_kernel_board.mk"/>
+  </project>
+  <project remote="clo-le" name="platform/vendor/opensource/le-codec2-port" path="src/vendor/qcom/opensource/le-codec2-port" revision="b4d60e01d6111feea9c9c2746a6c67908581d8bd" upstream="refs/heads/le-codec2-frameworks.lnx.2.1.r7-rel"/>
+  <project remote="clo-le" name="platform/vendor/opensource/mm-drivers" path="src/display/vendor/qcom/opensource/mm-drivers" revision="496a07b248c17d707511005fa8f2f584742a7e55" upstream="refs/heads/display-kernel.lnx.5.15.2.r8-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/mm_driver_product.mk" src="mm_driver_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/mm_driver_board.mk" src="mm_driver_board.mk"/>
+  </project>
+  <project remote="clo-le" name="platform/vendor/opensource/mmrm-driver" path="src/vendor/qcom/opensource/mmrm-driver" revision="0ecad902add56e93e083c1a4acab37b05b14c508" upstream="refs/heads/mmrm-kernel.lnx.1.0.r14-rel" groups="cyborg">
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/mmrm_kernel_board.mk" src="mmrm_kernel_board.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/mmrm_kernel_product.mk" src="mmrm_kernel_product.mk"/>
+  </project>
+  <project remote="clo-le" name="platform/vendor/opensource/mmrm-driver-test" path="src/vendor/qcom/opensource/mmrm-driver/test" revision="65a4cddc817269dfc4e835a3d355dc423d3bc51c" upstream="refs/heads/mmrm-kernel.lnx.1.0.r14-rel" groups="cyborg"/>
+  <project remote="clo-le" name="platform/vendor/opensource/touch-drivers" path="src/vendor/qcom/opensource/touch-drivers" revision="68a2183dd94578c1739680c3f054ed1468dbeb05" upstream="refs/heads/touch-kernel.lnx.5.15.r33-rel">
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/touch_driver_board.mk" src="touch_driver_board.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/touch_driver_product.mk" src="touch_driver_product.mk"/>
+  </project>
+  <project remote="clo-le" name="platform/vendor/opensource/video-driver" path="src/vendor/qcom/opensource/video-driver" revision="db0a112ba75cd78aa599c71215b9d146cce72866" upstream="refs/heads/video-kernel-waipio.lnx.2.0.r1-rel" groups="cyborg">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/video_kernel_product.mk" src="video_kernel_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/video_kernel_board.mk" src="video_kernel_board.mk"/>
+  </project>
+  <project remote="clo-le" name="platform/vendor/opensource/video-driver-test" path="src/vendor/qcom/opensource/video-driver/test" revision="66256693d2930b5846686fa1894fd42e8b7b8d5a" upstream="refs/heads/video-kernel-waipio.lnx.2.0.r1-rel" groups="cyborg"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/audio-hal/st-hal-ar" path="src/vendor/qcom/opensource/audio-hal/st-hal" revision="661a2f09e618dba9df7902bf6dcbc1580a742c30" upstream="refs/heads/audio-android-hal.lnx.3.0.r26-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/bluetooth" path="src/vendor/qcom/opensource/bluetooth" revision="6e107b28aa714852800a0688525e82f807e63953" upstream="refs/heads/bt.lnx.le.4.0.r3-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/bluetooth-le" path="src/vendor/qcom/opensource/bluetooth-le" revision="5628da128a624eb5f6f4e361e49337cccbf3067a" upstream="refs/heads/bt.lnx.le.4.0.r3-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/bluetooth_ext" path="src/vendor/qcom/opensource/bluetooth_ext" revision="de10cf29bc0048043680fb91fce186f323cd39d3" upstream="refs/heads/bt.lnx.le.4.0.r3-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/bt-kernel" path="src/vendor/qcom/opensource/bt-kernel" revision="a7b96a04e09d1942011994cad47fcb48c032ba8a" upstream="refs/heads/bt.lnx.le.4.0.r3-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/crosvm-gunyah" path="src/vendor/qcom/opensource/crosvm-gunyah" revision="55de9f111027c943ff1e1fa031a0f3cce51ff578" upstream="refs/heads/robotics-android-core-sys.lnx.13.0.r3-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="src/data-ipa-cfg-mgr" revision="f7987d222e9cbc8e2a30faa73c4343c10a941074" upstream="refs/heads/data.lnx.1.1.3.r4-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/data-kernel" path="src/data-kernel" revision="cefcf232e73a32e7abec4ebef9314d1df8867611" upstream="refs/heads/data.lnx.1.1.3.r4-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/dataservices" path="src/data-oss" revision="4b6be1b629c67550d354c77973935559983d171c" upstream="refs/heads/data.lnx.1.1.3.r4-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/display-commonsys-intf" path="src/vendor/qcom/opensource/commonsys-intf/display" revision="49e72d1285807943425701ce9f6ef2ebadc36dd4" upstream="refs/heads/display-android-commonsys.lnx.1.1.r32-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3">
+    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk"/>
+  </project>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/gst-plugins-qti-oss" path="src/vendor/qcom/opensource/gst-plugins-qti-oss" revision="c206f02a27fcd280172b7096601c33a7380d7f5b" upstream="refs/heads/im-sdk.lnx.1.0.0.r4-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/iot-core-oss" path="src/vendor/qcom/opensource/iot-core-oss" revision="931f7f4dc76dbe99778f45b1a4ad8077edfb18d0" upstream="refs/heads/iot-core-algs.lnx.1.0.r25-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/lights" path="vendor/qcom/opensource/lights" revision="abe5aa0d7a7df79657c7492e8883e3fc855a9dc0" upstream="refs/heads/core-technologies.lnx.13.0.r33-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/location" path="src/qcom-opensource/location" revision="7c159d53fcbb6deef0c52dfc98ffd1bb1ea45dbb" upstream="refs/heads/location.lnx.8.0.r47-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/mmc-utils" path="disregard/vendor/qcom/opensource/mmc-utils" revision="31c24a281f1771fb2cfb437ff527f764116e5f60" upstream="refs/heads/core-technologies.lnx.13.0.r33-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/qmmf-sdk" path="src/vendor/qcom/opensource/qmmf-sdk" revision="36de57a36ef121253316a473d66f4286cf497905" upstream="refs/heads/iot-concam.lnx.2.0.r29-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/ramparser" path="src/vendor/qcom/opensource/ramparser" revision="534eaa85b934fa6dfa744797041d357973d7e0e0" upstream="refs/heads/developer-tools.lnx.1.0.r4-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/roboticsvm" path="src/vendor/qcom/opensource/roboticsvm" revision="289e30ac19edfa4e36a28112ac4e0a9d5b5eca5b" upstream="refs/heads/robotics-android-core-sys.lnx.13.0.r3-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/shortcut-fe" path="src/shortcut-fe" revision="3623f52fa75910d6dafbe53277ec29a926b26114" upstream="refs/heads/data.lnx.1.1.3.r4-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/system/bt" path="src/vendor/qcom/opensource/system/bt" revision="81aeea66efe48391846c3b1ee0fb03f01467e68d" upstream="refs/heads/bt.lnx.le.4.0.r3-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/system/sample-apps" path="src/vendor/qcom/opensource/system/sample-apps" revision="11f1e9b801d6d43dd4fdcc2c4b38a3cb733c6825" upstream="refs/heads/iot-system-apps.lnx.1.0.r4-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/tcp-splice" path="src/tcp-splice" revision="a7bcad280a4ab691abfb35b279a179b69680088e" upstream="refs/heads/data.lnx.1.1.3.r4-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/time-services" path="disregard/vendor/qcom/opensource/time-services" revision="63b043b2b34d0e7548bb5cc1fed4cc3ee5306f17" upstream="refs/heads/core-technologies.lnx.13.0.r33-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/tools" path="src/vendor/qcom/opensource/tools" revision="6548cda554de9e3aed3c529029ece0ea52d9656a" upstream="refs/heads/developer-tools.lnx.1.0.r4-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/ts_firmware" path="src/vendor/qcom/opensource/ts_firmware" revision="2880e2a020f48835fd225ca47ba3775f3126f204" upstream="refs/heads/touch.lnx.3.0.r28-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/usb" path="disregard/vendor/qcom/opensource/usb" revision="cebf32727b291bc1929235f7b58b8f5de53dcc24" upstream="refs/heads/core-technologies.lnx.13.0.r33-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/vibrator" path="disregard/vendor/qcom/opensource/vibrator" revision="5aed9ead63c579514feb233847c15e932c49645f" upstream="refs/heads/core-technologies.lnx.13.0.r33-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/wlan/fw-api" path="src/wlan/fw-api" revision="39dd94c983cd813198a568771400610b92bdbf10" upstream="refs/heads/wlan-api.lnx.1.0.r273-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/wlan/platform" path="src/wlan/platform" revision="95e08135b6c3a941fcfa41f83b003ca3c4b48b22" upstream="refs/heads/wlan-platform.lnx.1.0.r83-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="src/wlan/qca-wifi-host-cmn" revision="0eb3382a50655acc12b62ac6ab7ab4589794e2b4" upstream="refs/heads/wlan-cmn.driver.lnx.2.0.9.r14-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="src/wlan/qcacld-3.0" revision="ce22c879828066fe85208331d34ff9b715317b53" upstream="refs/heads/wlan-cld3.driver.lnx.2.0.9.r14-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/wlan/qcawifi-cmn-dev" path="src/qcawifi/qca-wifi/cmn_dev" revision="cde13e313b48738eb266a01c6aa2c016f15deef1" upstream="refs/heads/qcawifi-hdr.lnx.3.0.r2-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/wlan/qcawifi-fw-hdr" path="src/qcawifi/qca-wifi/cmn_dev/fw_hdr" revision="e26f4085ee1f015245a60f459cb43fd7a7dca682" upstream="refs/heads/qcawifi-hdr.lnx.3.0.r2-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="src/wlan/utils/sigma-dut" revision="4e14fc1f3e264d29d6bfe57d7007bbbdd2f55351" upstream="refs/heads/wlan-service-mcc.lnx.1.0.r81-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/agm" path="src/vendor/qcom/opensource/agm" revision="16c5a5668e8926f7ce5342d54002d93b2237f39c" upstream="refs/heads/audio-platform-arintf.lnx.1.0.r116-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/arpal-lx" path="src/vendor/qcom/opensource/pal" revision="e77ef108b4610ae7fec4c7826d39a98cae3f7584" upstream="refs/heads/audio-platform-arintf.lnx.1.0.r116-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/audio-kernel-ar" path="src/vendor/qcom/opensource/audio-kernel" revision="a327429a67681545c6ee373acc675c01eb7743ca" upstream="refs/heads/audio-kernel.lnx.5.15.r59-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/datarmnet" path="src/datarmnet" revision="e3a9d0763885aeacb6099f426b6170e91f641d3b" upstream="refs/heads/data-kernel.lnx.2.0.r47-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/datarmnet-ext" path="src/datarmnet-ext" revision="22bcdafca3b3cf988e1214b49ee57589b3f24f11" upstream="refs/heads/data-kernel.lnx.2.0.r47-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/graphics-kernel" path="src/vendor/qcom/opensource/graphics-kernel" revision="ac3ecbdcdefd5c24b20f524d27d4a37c9abe2bf6" upstream="refs/heads/gfx-kernel.lnx.13.0.r15-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/gfx_driver_product.mk" src="gfx_driver_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/gfx_kernel_board.mk" src="gfx_kernel_board.mk"/>
+  </project>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/securemsm-kernel" path="src/vendor/qcom/opensource/securemsm-kernel" revision="fe9ca46d2c8c2758e8429fe68a65b098be13de60" upstream="refs/heads/sec-kernel.lnx.13.1.r68-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/tinyalsa" path="src/vendor/qcom/opensource/tinyalsa" revision="7ffd36603eccf1dfddf33208b7cc44a234289b84" upstream="refs/heads/audio-tinylibs.lnx.1.0.r94-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/tinycompress" path="src/vendor/qcom/opensource/tinycompress" revision="9696c1f5de226e5272b028444ba68b69b7f1ed7b" upstream="refs/heads/audio-tinylibs.lnx.1.0.r94-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/wlan" path="src/device/qcom/wlan" revision="f8805abcc8c7a5e21138ce78d24cbc8b55d150d1" upstream="refs/heads/wlan-service-mcc.lnx.1.0.r81-rel"/>
+  <project remote="clo-le" name="pmipv6" path="src/pmipv6" revision="e1767066b85009c636668f768bf8a2e1a1695ba6" upstream="refs/heads/data.lnx.1.1.3.r4-rel"/>
+  <project remote="clo-le" name="pulseaudio" path="src/external/pulseaudio" revision="33f1dfc08c1709b73ec4667ad763b3e13d2628ff" upstream="refs/heads/pulseaudio.lnx.3.0.r11-rel"/>
+  <project remote="clo-le" name="qc/components/le-codec2-frameworks-lnx/oe-recipes-oss" path="poky/meta-qti-bsp/recipes-le-codec2-frameworks" revision="3cd7db4535f4d9b740961608f6c0e6a0ce0b2964" upstream="refs/heads/le-codec2-frameworks.lnx.2.1.r7-rel"/>
+  <project remote="clo-le" name="qc/components/mmrm-kernel-lnx/oe-recipes-oss" path="poky/meta-qti-bsp/recipes-mmrm-kernel" revision="1ccb1c4f1e3fc4c887561c97fd8b398c94f191ba" upstream="refs/heads/mmrm-kernel.lnx.1.0.r14-rel"/>
+  <project remote="clo-le" name="qc/components/pulseaudio.lnx/oe-recipes-oss" path="poky/meta-qti-qmmf/recipes/pulseaudio" revision="ed65f9429b5a255bc23bcf841cd45c9d83388d36" upstream="refs/heads/pulseaudio.lnx.3.0.r11-rel"/>
+  <project remote="clo-le" name="qc/components/recipes-roboticsvm" path="poky/meta-qti-bsp/recipes-roboticsvm" revision="f354317fc117b9670ef45b2675691d9e9d9b5b88" upstream="refs/heads/robotics-android-core-sys.lnx.13.0.r3-rel"/>
+  <project remote="clo-le" name="qc/components/video-kernel-lnx/oe-recipes-oss" path="poky/meta-qti-bsp/recipes-video-kernel" revision="fc4a21730e0379a49ce45bc18a621cb72fa0490f" upstream="refs/heads/video-kernel-waipio.lnx.2.0.r1-rel"/>
+  <project remote="clo-le" name="qc/components/video-userspace-lnx-codec2/oe-recipes-oss" path="poky/meta-qti-bsp/recipes-video-userspace" revision="076bc905f851a3b81f59e4181ce390f88a318ada" upstream="refs/heads/video-userspace.lnx.codec2.6.0.r1-rel"/>
+  <project remote="clo-le" name="qcom-opensource/mdm-init" path="src/mdm-init" revision="8f7eccca50b266f06e6a611e5c854841f3f004cf" upstream="refs/heads/wlan-service-mdm.lnx.2.0.r7-rel"/>
+  <project remote="clo-le" name="robos/meta-qti-robos" path="poky/meta-qti-robos" revision="74d339e3d580fde3e3cedf58d0c83348da0b2a19" upstream="refs/heads/robos.lnx.2.0.r4-rel"/>
+  <project remote="clo-le" name="robos/meta-qti-robos-addon" path="poky/meta-qti-robos-addon" revision="c7502a57f2b8acee72dc787dfd8e477a2cba8436" upstream="refs/heads/robos.lnx.2.0.r4-rel"/>
+  <project remote="clo-le" name="robos/robos-addon" path="src/robos-addon" revision="79ebdbcd0cd1d5f16e0d3a34629d76818a8402cd" upstream="refs/heads/robos.lnx.2.0.r4-rel"/>
+  <project remote="clo-le" name="robos/robotics-os" path="src/robotics-os" revision="e63048bf983597a2431dbcd1f2b1478db999981f" upstream="refs/heads/robos.lnx.2.0.r4-rel"/>
+  <project remote="clo-le" name="ros-perception/image_pipeline" path="src/ros/ros-perception/image_pipeline" revision="975548a97abf5de7cdebfd0c8be6712fe128bcee" upstream="refs/heads/ros-core-humble.lnx.1.0.r5-rel"/>
+  <project remote="clo-le" name="ros-perception/image_transport_plugins" path="src/ros/ros-perception/image_transport_plugins" revision="ef9442d8e92c14dcb5ed9023b9577e6d9e5cad39" upstream="refs/heads/ros-core-humble.lnx.1.0.r5-rel"/>
+  <project remote="clo-le" name="wayland/weston" path="src/display/weston" revision="0c28572518f174e6c0be2b90db4f4a441b65b531" upstream="refs/heads/display.lnx.6.8.r3-rel"/>
+  <project remote="clo-qsdk" name="wifi/qca-wifi-oss" path="src/qcawifi/qca-wifi/component_dev" revision="26420280049ff0a536cdb3f75313fff7e187165c" upstream="refs/heads/qcawifi-driver.lnx.3.0.r2-rel"/>
+</manifest>
