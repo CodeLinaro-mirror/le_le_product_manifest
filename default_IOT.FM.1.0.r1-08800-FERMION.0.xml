@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="clo" fetch="https://git.codelinaro.org" review="codelinaro.org"/>
+  <default remote="clo" revision="refs/heads/IOT.FM.1.0"/>
+  <project name="clo/le/qccsdk/oss/backoffAlgorithm" path="comp/backoffAlgorithm" revision="refs/heads/fermion.iot.1.1.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/exhost" path="comp/exhost" revision="refs/heads/fermion.iot.1.1.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/freertos-kernel" path="comp/freertos" revision="refs/heads/fermion.iot.1.1.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/hostap" path="comp/hostap" revision="refs/heads/fermion.iot.1.1.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/littlefs" path="comp/littlefs" revision="refs/heads/fermion.iot.1.1.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/lwip" path="comp/lwip" revision="refs/heads/fermion.iot.1.1.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/matter" path="comp/matter" revision="refs/heads/fermion.iot.1.1.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/mbedtls" path="comp/mbedtls" revision="refs/heads/fermion.iot.1.1.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/mqtt" path="comp/mqtt" revision="refs/heads/fermion.iot.1.1.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/posix" path="comp/posix" revision="refs/heads/fermion.iot.1.1.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/qccsdkmain" path="qccsdk" revision="refs/heads/fermion.iot.1.1.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/qtcapy" path="comp/qtcapy" revision="refs/heads/fermion.iot.1.1.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/qurt" path="comp/qurt" revision="refs/heads/fermion.iot.1.1.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/segger-rtt" path="comp/segger-rtt" revision="refs/heads/fermion.iot.1.1.r1-rel"/>
+</manifest>
