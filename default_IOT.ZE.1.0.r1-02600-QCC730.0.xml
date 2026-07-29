@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="clo" fetch="https://git.codelinaro.org" review="codelinaro.org"/>
+  <default remote="clo" revision="refs/heads/IOT.ZE.1.0"/>
+  <project name="clo/le/qccsdk/oss/matter" path="connectedhomeip" revision="refs/heads/3rdparty.qzephyr.1.0.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/qtcapy" path="modules/lib/qtcapy" revision="refs/heads/3rdparty.qzephyr.1.0.r1-rel"/>
+  <project name="clo/le/qzephyr/3rdparty/cAT" path="modules/lib/cAT" revision="refs/heads/3rdparty.qzephyr.1.0.r1-rel"/>
+  <project name="clo/le/qzephyr/qoss/qapp" path="qapp" revision="refs/heads/qcc730.qzephyr.2.0.r1-rel"/>
+  <project name="clo/le/qzephyr/upstream/qcc730" path="qcc730" revision="refs/heads/qcc730.qzephyr.2.0.r1-rel"/>
+  <project name="clo/le/qzephyr/upstream/qhal" path="modules/hal/qcom" revision="refs/heads/qcc730.qzephyr.2.0.r1-rel"/>
+  <project name="clo/le/qzephyr/zephyrproject-rtos/cmsis_6" path="modules/hal/cmsis_6" revision="refs/heads/cmsis_6.qzephyr.2.0.r1-rel"/>
+  <project name="clo/le/qzephyr/zephyrproject-rtos/hostap" path="modules/lib/hostap" revision="refs/heads/hostap.qzephyr.2.0.r1-rel"/>
+  <project name="clo/le/qzephyr/zephyrproject-rtos/littlefs" path="modules/fs/littlefs" revision="refs/heads/littlefs.qzephyr.2.0.r1-rel"/>
+  <project name="clo/le/qzephyr/zephyrproject-rtos/mbedtls" path="modules/crypto/mbedtls" revision="refs/heads/mbedtls.qzephyr.2.0.r1-rel"/>
+  <project name="clo/le/qzephyr/zephyrproject-rtos/segger" path="modules/debug/segger" revision="refs/heads/segger.qzephyr.2.0.r1-rel"/>
+  <project name="clo/le/qzephyr/zephyrproject-rtos/zcbor" path="modules/lib/zcbor" revision="refs/heads/zcbor.qzephyr.1.0.r1-rel"/>
+  <project name="clo/le/qzephyr/zephyrproject-rtos/zephyr" path="zephyr" revision="refs/heads/kernel.qzephyr.2.0.r1-rel"/>
+</manifest>
