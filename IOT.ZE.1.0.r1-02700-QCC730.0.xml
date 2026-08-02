@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="clo" fetch="https://git.codelinaro.org" review="codelinaro.org"/>
+  <default remote="clo" revision="refs/heads/IOT.ZE.1.0"/>
+  <project name="clo/le/qccsdk/oss/matter" path="connectedhomeip" revision="47f9ef6b808ea3395d29d7d3abf96733d1da3294" upstream="refs/heads/3rdparty.qzephyr.1.0.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/qtcapy" path="modules/lib/qtcapy" revision="2bab153aed35b1a55174660b8a2d78412b304b1c" upstream="refs/heads/3rdparty.qzephyr.1.0.r1-rel"/>
+  <project name="clo/le/qzephyr/3rdparty/cAT" path="modules/lib/cAT" revision="e6a1d32c38d8771fed0306ea166ef70a78d6a6f5" upstream="refs/heads/3rdparty.qzephyr.1.0.r1-rel"/>
+  <project name="clo/le/qzephyr/qoss/qapp" path="qapp" revision="a027bb2415069a538165447b0b800e4882b5015c" upstream="refs/heads/qcc730.qzephyr.2.0.r1-rel"/>
+  <project name="clo/le/qzephyr/upstream/qcc730" path="qcc730" revision="b905f022bbdd13364b12e6a1609d4d1544d1970d" upstream="refs/heads/qcc730.qzephyr.2.0.r1-rel"/>
+  <project name="clo/le/qzephyr/upstream/qhal" path="modules/hal/qcom" revision="1ff3d25ad7a42021db92ceb6615635c5f7dfde75" upstream="refs/heads/qcc730.qzephyr.2.0.r1-rel"/>
+  <project name="clo/le/qzephyr/zephyrproject-rtos/cmsis_6" path="modules/hal/cmsis_6" revision="30a859f44ef8ab4dc8f84b03ed586fd16ccf9d74" upstream="refs/heads/cmsis_6.qzephyr.2.0.r1-rel"/>
+  <project name="clo/le/qzephyr/zephyrproject-rtos/hostap" path="modules/lib/hostap" revision="cf05f33f594de6b62840a3b0dd435f10467a2e4c" upstream="refs/heads/hostap.qzephyr.2.0.r1-rel"/>
+  <project name="clo/le/qzephyr/zephyrproject-rtos/littlefs" path="modules/fs/littlefs" revision="8f5ca347843363882619d8f96c00d8dbd88a8e79" upstream="refs/heads/littlefs.qzephyr.2.0.r1-rel"/>
+  <project name="clo/le/qzephyr/zephyrproject-rtos/mbedtls" path="modules/crypto/mbedtls" revision="c5b06d89c9c498d8fc8659ce31f7e53137b6270f" upstream="refs/heads/mbedtls.qzephyr.2.0.r1-rel"/>
+  <project name="clo/le/qzephyr/zephyrproject-rtos/segger" path="modules/debug/segger" revision="9f08435a79d41133d7046b7c59d1b25929eda450" upstream="refs/heads/segger.qzephyr.2.0.r1-rel"/>
+  <project name="clo/le/qzephyr/zephyrproject-rtos/zcbor" path="modules/lib/zcbor" revision="9b07780aca6fb21f82a241ba386ad9b379809337" upstream="refs/heads/zcbor.qzephyr.1.0.r1-rel"/>
+  <project name="clo/le/qzephyr/zephyrproject-rtos/zephyr" path="zephyr" revision="3568e1b6d5cdd51a6b964a2a1d6d29200fea2056" upstream="refs/heads/kernel.qzephyr.2.0.r1-rel"/>
+</manifest>
