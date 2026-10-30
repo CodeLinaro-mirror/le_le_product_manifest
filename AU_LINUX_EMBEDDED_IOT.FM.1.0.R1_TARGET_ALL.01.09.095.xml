@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="clo" fetch="https://git.codelinaro.org" review="codelinaro.org"/>
+  <default remote="clo" revision="refs/heads/IOT.FM.1.0"/>
+  <project name="clo/le/qccsdk/oss/backoffAlgorithm" path="comp/backoffAlgorithm" revision="a06c46bd403bf126a6443cac60368765f2ad4024" upstream="refs/heads/fermion.iot.1.2.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/exhost" path="comp/exhost" revision="af8d5ae01c52245efa827d608df5004ee16b566a" upstream="refs/heads/fermion.iot.1.2.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/freertos-kernel" path="comp/freertos" revision="268956add9186fdc4d310b903e1e9f4a5c400ce3" upstream="refs/heads/fermion.iot.1.2.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/hostap" path="comp/hostap" revision="9bb0291659b1c9545aa562438e479291a0153850" upstream="refs/heads/fermion.iot.1.2.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/littlefs" path="comp/littlefs" revision="3513ff1afc1d67adb2e6f492f0b9bc0d798fcb0d" upstream="refs/heads/fermion.iot.1.2.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/lwip" path="comp/lwip" revision="4785bc7922ea45f96fa4f99f3cd42c368faaf48b" upstream="refs/heads/fermion.iot.1.2.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/matter" path="comp/matter" revision="5bb5c9e23d532cea40476fc0bd1d3008522792ba" upstream="refs/heads/fermion.iot.1.2.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/mbedtls" path="comp/mbedtls" revision="20593c8da9ef4ecadb4db02a525447db2012acb8" upstream="refs/heads/fermion.iot.1.2.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/mqtt" path="comp/mqtt" revision="143a15eb11124903e51ab3c0bba6234fbbe23f42" upstream="refs/heads/fermion.iot.1.2.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/posix" path="comp/posix" revision="7d726427ed3456fb70d0841a96fe0706a60aef2f" upstream="refs/heads/fermion.iot.1.2.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/qccsdkmain" path="qccsdk" revision="1ff7f000ab420efa08be1532d2841d3dec24a545" upstream="refs/heads/fermion.iot.1.2.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/qtcapy" path="comp/qtcapy" revision="160b48e228b976783e98a7208e55a7f111c52781" upstream="refs/heads/fermion.iot.1.2.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/qurt" path="comp/qurt" revision="9c62c33b6a2cc78e6afec87fdd5a4b0967c31069" upstream="refs/heads/fermion.iot.1.2.r1-rel"/>
+  <project name="clo/le/qccsdk/oss/segger-rtt" path="comp/segger-rtt" revision="fdac9caa261a318eb549002f8d5e869cebeb1f37" upstream="refs/heads/fermion.iot.1.2.r1-rel"/>
+</manifest>
