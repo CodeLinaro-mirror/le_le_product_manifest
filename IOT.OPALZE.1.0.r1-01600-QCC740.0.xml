@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="clo" fetch="https://git.codelinaro.org" review="codelinaro.org"/>
+  <default remote="clo" revision="refs/heads/IOT.OPALZE.1.0"/>
+  <project name="clo/le/qzephyr/3rdparty/cAT" path="modules/lib/cAT" revision="0a5fa230b8a16e2fdb3a715818fdd05ade7a6fc7" upstream="refs/heads/qcc740.qzephyr.1.0.r1-rel"/>
+  <project name="clo/le/qzephyr/qoss/qat-service" path="qapp/qat" revision="01465a6e3e01a2d2251897dbc70e4ac1b672a280" upstream="refs/heads/qcc740.qzephyr.1.0.r1-rel"/>
+  <project name="clo/le/qzephyr/qoss/qcc74x-zephyr-app" path="qapp/qcc74x" revision="4cc70cbcbd49709fff7c598cc8388709905f4eab" upstream="refs/heads/qcc740.qzephyr.1.0.r1-rel"/>
+  <project name="clo/le/qzephyr/qoss/west-manifest" path="west-manifest" revision="3d1d3895a77646e9de012dc8da09881350b801ac" upstream="refs/heads/manifest.qzephyr.1.0.r1-rel"/>
+  <project name="clo/le/qzephyr/upstream/qcc74x-zephyr" path="qcc74x-zephyr" revision="c364feaf4996bb31142555bc6f03eb837c6fa992" upstream="refs/heads/qcc740.qzephyr.1.0.r1-rel"/>
+  <project name="clo/le/qzephyr/upstream/qcc74x-zephyr-hal" path="modules/hal/qcom/qcc74x" revision="41f451d559cde15e18bb21c27d46018dd053fdea" upstream="refs/heads/qcc740.qzephyr.1.0.r1-rel"/>
+  <project name="clo/le/qzephyr/zephyrproject-rtos/fatfs" path="modules/fs/fatfs" revision="f4ead3bf4a6dab3a07d7b5f5315795c073db568d" upstream="refs/heads/core.qzephyr.4.4.r1-rel"/>
+  <project name="clo/le/qzephyr/zephyrproject-rtos/littlefs" path="modules/fs/littlefs" revision="8f5ca347843363882619d8f96c00d8dbd88a8e79" upstream="refs/heads/core.qzephyr.4.4.r1-rel"/>
+  <project name="clo/le/qzephyr/zephyrproject-rtos/lvgl" path="modules/lib/gui/lvgl" revision="85aa60d18b3d5e5588d7b247abf90198f07c8a63" upstream="refs/heads/core.qzephyr.4.4.r1-rel"/>
+  <project name="clo/le/qzephyr/zephyrproject-rtos/mbedtls" path="modules/crypto/mbedtls" revision="a3e190fe44c78d1ba67f55979e1257328cc7d0d8" upstream="refs/heads/core.qzephyr.4.4.r1-rel"/>
+  <project name="clo/le/qzephyr/zephyrproject-rtos/mcuboot" path="bootloader/mcuboot" revision="ee39e2d694bd827ffd1bebbce2f571a9154e6ec2" upstream="refs/heads/core.qzephyr.4.4.r1-rel"/>
+  <project name="clo/le/qzephyr/zephyrproject-rtos/openthread" path="modules/lib/openthread" revision="e4d97681c53ec1cc34af1404ad2960adda4ba691" upstream="refs/heads/core.qzephyr.4.4.r1-rel"/>
+  <project name="clo/le/qzephyr/zephyrproject-rtos/tf-psa-crypto" path="modules/crypto/tf-psa-crypto" revision="dc575a2ddcc8cb16275d24c42a52eaf79ebe2231" upstream="refs/heads/core.qzephyr.4.4.r1-rel"/>
+  <project name="clo/le/qzephyr/zephyrproject-rtos/zcbor" path="modules/lib/zcbor" revision="9164bd18dcd88ff9d9ef98279501fc1093571017" upstream="refs/heads/core.qzephyr.4.4.r1-rel"/>
+  <project name="clo/le/qzephyr/zephyrproject-rtos/zephyr" path="zephyr" revision="8b6cbde712c42b7d349c92bb806b0656a7a49a4c" upstream="refs/heads/core.qzephyr.4.4.r1-rel"/>
+</manifest>
